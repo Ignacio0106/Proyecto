@@ -36,6 +36,30 @@ header span {
 }
 
 /* Navegación: fondo azul oscuro, sticky arriba, con efectos hover */
+#barra-menu{
+    background-color: #2e5f68;
+    padding: 10px 0px;
+}
+
+#barra-menu .labelMenu img{
+    display: none;
+    background-color: #2e5f68;
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#barra-menu .labelMenu img:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateX(2px)
+}
+
+#menu-check{
+    display: none;
+}
+
 nav {
     background-color: #2e5f68;
     padding: 10px 0;
@@ -68,6 +92,22 @@ nav ul li a:hover {
     background-color: #4a94a1;
     border-radius: 5px;
     transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        background-color: #2e5f68;
+    }
+    #menu-check:checked + label + nav ul {
+        display: flex;
+    }
+    #barra-menu .labelMenu img {
+        display: block;
+    }
 }
 
 /* Contenido principal: flex para que el footer quede abajo, max ancho y centrado */
@@ -127,6 +167,9 @@ ul li {
     text-align: center;
     padding: 20px;
     font-family: Arial, sans-serif;
+    position: sticky;
+    bottom: 0;
+    z-index: 999;
 }
 
 .footer a {
@@ -192,15 +235,4 @@ ul li {
     font-size: 18px;
     color: #e63946;
     padding-bottom: 10px;
-}
-
-.preguntas-frecuentes {
-    border: #333 1px solid;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px;
-}
-
-.preguntas-frecuentes h3{
-    color: cornflowerblue;
 }
