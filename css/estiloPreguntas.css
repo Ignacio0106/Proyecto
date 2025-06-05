@@ -17,7 +17,11 @@ header {
     display: flex;
     justify-content: center;
 }
-
+header a{
+    display: flex;
+    align-items: center; 
+    text-decoration: none;
+}
 header img {
     width: 100px;
     margin-right: 10px;
@@ -26,6 +30,8 @@ header img {
 header span {
     font-family: 'Bebas Neue', sans-serif;
     color: white;
+    font-size: 30px; 
+    line-height: 1;
 }
 
 /* Navegación: fondo azul oscuro, sticky arriba, con efectos hover */
@@ -92,6 +98,7 @@ nav ul li a:hover {
         display: block;
     }
 }
+
 .preguntas-lista{
     list-style-type: none;
     padding: 0;
@@ -100,10 +107,9 @@ nav ul li a:hover {
 .preguntas-lista li {
     background-color: #ffffff;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 0%;
-    padding: 15px;
-    margin-bottom: 15px;
+    border-radius: 8px;
+    padding: 1em;
+    margin: 15px 15px 0px 15px;
     transition: box-shadow 0.3s, transform 0.2s; 
 }
 
@@ -111,14 +117,61 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     transform: translateY(-5px);
 }
-.preguntas-lista li:paused  {
-    background-color: #0d6f7c;
+
+.labelVer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
 }
+.labelVer img{
+    width: 20px;
+    height: 20px;
+    margin-left: 12px;
+}
+.descripcion{
+    display: none;
+}
+ .ver-check{
+    display: none;
+}
+.ver-check:checked + .labelVer img {
+    transform: rotate(180deg);
+}
+.ver-check:checked + .labelVer + .descripcion{
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #dadada;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*  details {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+details[open] summary::after {
+  content: " ▲";
+}
+summary::after {
+  content: " ▼";
+} */
+
 /* Títulos categorías y subcategorías */
 h3 {
     font-family: 'Bebas Neue', sans-serif;
-    color: #1f4a5a;
-    margin-top: 40px;
+    color: #066081;
+    margin-top: 15px;
     margin-bottom: 15px;
     border-bottom: 2px solid #2e5f68;
     padding-bottom: 5px;
@@ -129,7 +182,7 @@ h3 {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 0.8em;
     font-family: Arial, sans-serif;
     position: sticky;
     bottom: 0;

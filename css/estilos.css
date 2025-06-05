@@ -31,8 +31,9 @@ header img {
 
 header span {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 30px;
     color: white;
+    font-size: 30px; 
+    line-height: 1;
 }
 
 /* Navegación: fondo azul oscuro, sticky arriba, con efectos hover */
