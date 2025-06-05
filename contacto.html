@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <title>Proyecto Restaurante - Contacto</title>
+</head>
+<body>
+    <header style="display: flex; justify-content: center; align-items: center; background-color: black; padding: 20px;">
+        <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+            <img
+                style="width: 100px; margin-right: 10px;"
+                src="./img/logo.png"
+                alt="Logo"
+            />
+            <div style="display: flex; flex-direction: column;">
+                <span style="font-family: 'Bebas Neue', sans-serif; font-size: 30px; color: white; line-height: 1;">
+                    LA CHISMOSSA
+                </span>
+            </div>
+        </a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section style="padding: 20px; max-width: 800px; margin: auto;">
+            <h1>Contáctanos</h1>
+
+            <h2>Información de Contacto</h2>
+            <p><strong>Teléfono:</strong>poner</p>
+            <p><strong>Dirección:</strong> poner</p>
+            <p><strong>Horarios:</strong> Lunes a Domingo, 11:00am - 10:00pm</p>
+
+            <h2>Formulario de Contacto</h2>
+            <form id="contactoForm">
+                <label for="nombre">Nombre completo:</label><br />
+                <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+                <label for="correo">Correo electrónico:</label><br />
+                <input type="email" id="correo" name="correo" required /><br /><br />
+
+                <label for="telefono">Teléfono:</label><br />
+                <input type="tel" id="telefono" name="telefono" /><br /><br />
+
+                <label for="asunto">Asunto:</label><br />
+                <input type="text" id="asunto" name="asunto" /><br /><br />
+
+                <label for="tipo">Tipo de consulta:</label><br />
+                <select id="tipo" name="tipo">
+                    <option value="general">General</option>
+                    <option value="reserva">Reserva</option>
+                    <option value="reclamo">Reclamo</option>
+                    <option value="otro">Otro</option>
+                </select><br /><br />
+
+                <label for="mensaje">Mensaje:</label><br />
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br /><br />
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <div
+                id="mensajeConfirmacion"
+                style="display: none; margin-top: 20px; font-weight: bold;"
+            ></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 La Chismossa. Todos los derechos reservados.</p>
+        <p>
+            Síguenos en
+            <a href="https://www.instagram.com/la_chismossa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                >Instagram</a
+            >
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById("contactoForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const form = event.target;
+            const formData = new FormData(form);
+
+            fetch("enviar.php", {
+                method: "POST",
+                body: formData,
+            })
+                .then((response) => response.text())
+                .then((data) => {
+                    const mensajeDiv = document.getElementById("mensajeConfirmacion");
+                    mensajeDiv.style.display = "block";
+                    mensajeDiv.textContent = data;
+
+                    if (data.includes("Gracias por contactarnos")) {
+                        mensajeDiv.style.color = "green";
+                        form.reset();
+                    } else {
+                        mensajeDiv.style.color = "red";
+                    }
+                })
+                .catch(() => {
+                    const mensajeDiv = document.getElementById("mensajeConfirmacion");
+                    mensajeDiv.style.display = "block";
+                    mensajeDiv.style.color = "red";
+                    mensajeDiv.textContent = "Error al enviar el mensaje. Inténtalo más tarde.";
+                });
+        });
+    </script>
+</body>
+</html>
