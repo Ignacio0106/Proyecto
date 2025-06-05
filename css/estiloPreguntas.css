@@ -1,14 +1,6 @@
 
 /* Fuente general y fondo */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+
 
 /* HTML y body para que ocupen toda la altura y usen flex columna */
 html, body {
@@ -202,5 +194,5 @@ ul li {
 }
 
 .preguntas-frecuentes h3{
-    color: cornflowerblue;
+    color: #f5c518;
 }
