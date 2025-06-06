@@ -1,8 +1,4 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+
 /* Fuente general y fondo */
 body {
     font-family: Arial, sans-serif;
@@ -170,31 +166,9 @@ summary::after {
 /* Títulos categorías y subcategorías */
 h3 {
     font-family: 'Bebas Neue', sans-serif;
-    color: #066081;
+    color: #2e5f68;
     margin-top: 15px;
     margin-bottom: 15px;
     border-bottom: 2px solid #2e5f68;
     padding-bottom: 5px;
-}
-
-/* Footer: fondo negro, texto blanco centrado */
-.footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 0.8em;
-    font-family: Arial, sans-serif;
-    position: sticky;
-    bottom: 0;
-    z-index: 999;
-}
-
-.footer a {
-    color: #f5c518;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.footer a:hover {
-    text-decoration: underline;
 }
