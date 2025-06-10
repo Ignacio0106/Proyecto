@@ -1,19 +1,36 @@
-/* Contenido principal: flex para que el footer quede abajo, max ancho y centrado */
+/* Estilo general del main */
 main {
     flex: 1;
     padding: 40px 20px;
     max-width: 1000px;
     margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-family: 'Bebas Neue', sans-serif;
 }
 
-/* Títulos con fuente Bebas Neue y color principal */
+/* Títulos */
 h1, h2 {
     font-family: 'Bebas Neue', sans-serif;
     color: #2e5f68;
     margin-bottom: 10px;
 }
 
-/* Títulos categorías y subcategorías */
+h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 26px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Subtítulo opcional */
 h3 {
     font-family: 'Bebas Neue', sans-serif;
     color: #1f4a5a;
@@ -23,27 +40,69 @@ h3 {
     padding-bottom: 5px;
 }
 
-h4 {
-    font-family: Arial, sans-serif;
-    color: #4a7c8c;
-    margin-left: 15px;
-    margin-bottom: 10px;
-    font-style: italic;
+/* Contenido general */
+.seccion {
+    margin-bottom: 50px;
+    text-align: center;
 }
 
-/* Estilo para línea divisoria entre categorías */
-hr {
-    width: 100%;
-    border: 1px solid #ccc;
-    margin: 40px 0;
-    opacity: 0.5;
+.seccion p,
+.seccion ul {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #333;
 }
 
-/* Listas con espacio entre elementos */
+/* Listas */
 ul {
     padding-left: 20px;
+    text-align: left;
 }
 
 ul li {
     margin-bottom: 8px;
+}
+
+/* Testimonios */
+blockquote {
+    font-style: italic;
+    background: #e0f0f2;
+    border-left: 6px solid #2e5f68;
+    margin: 20px auto;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: #333;
+    max-width: 700px;
+}
+
+cite {
+    display: block;
+    text-align: right;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+}
+
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+}
+
+.logo {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.nombre-sitio {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    color: white;
+    letter-spacing: 2px;
 }
