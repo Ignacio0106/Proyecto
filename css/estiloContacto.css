@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuente y estructura base */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.nombre-sitio {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Navegación */
+.barra-menu {
+  background-color: #2e5f68;
+  padding: 10px 0;
+}
+
+.labelMenu img {
+  display: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+nav {
+  background-color: #2e5f68;
+  padding: 5px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+  background-color: #4a94a1;
+  border-radius: 5px;
+  transform: scale(1.05);
+}
+
+#menu-check {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: #2e5f68;
+  }
+  #menu-check:checked + label + nav ul {
+    display: flex;
+  }
+  .labelMenu img {
+    display: block;
+  }
+}
+
+/* Main centrado */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Contenedor del formulario */
+.contenedor-central {
+  max-width: 800px;
+  width: 100%;
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+/* Titulos */
+h1, h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  color: #2e5f68;
+  margin-bottom: 10px;
+}
+
+/* Formulario */
+.formulario-contacto {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.formulario-contacto input,
+.formulario-contacto select,
+.formulario-contacto textarea,
+.formulario-contacto button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.formulario-contacto button {
+  background-color: #2e5f68;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.formulario-contacto button:hover {
+  background-color: #4a94a1;
+}
+
+/* Confirmación */
+.mensaje-confirmacion {
+  margin-top: 20px;
+  font-weight: bold;
+  display: none;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  font-family: Arial, sans-serif;
+}
+
+footer a {
+  color: #f5c518;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.subtitulo-contacto {
+  margin-top: 40px;
+  font-size: 24px;
+  color: #2e5f68;
+}
+
+.bloque-info {
+  margin-top: 15px;
+  margin-bottom: 40px;
+  text-align: left;
+  padding: 20px;
+  background-color: #f0f8fa;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.bloque-info p {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.etiqueta {
+  font-weight: bold;
+  color: #2e5f68;
+}
