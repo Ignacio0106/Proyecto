@@ -1,90 +1,231 @@
-/* Títulos con fuente Bebas Neue y color principal */
+/* ----------------------------- */
+/* Tipografía y Títulos         */
+/* ----------------------------- */
+
+/* Títulos principales con fuente Bebas Neue y color principal */
 h1, h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    color: #2e5f68;
-    margin-bottom: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #2e5f68;
+  margin-bottom: 10px;
 }
 
-/* Títulos categorías y subcategorías */
+/* Títulos para categorías y subcategorías */
 h3 {
-    font-family: 'Bebas Neue', sans-serif;
-    color: #1f4a5a;
-    margin-top: 40px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #2e5f68;
-    padding-bottom: 5px;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #1f4a5a;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #2e5f68;
+  padding-bottom: 5px;
 }
 
+/* Subtítulos secundarios */
 h4 {
-    font-family: Arial, sans-serif;
-    color: #4a7c8c;
-    margin-left: 15px;
-    margin-bottom: 10px;
-    font-style: italic;
+  font-family: Arial, sans-serif;
+  color: #4a7c8c;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  font-style: italic;
 }
 
-/* Contenido principal: flex para que el footer quede abajo, max ancho y centrado */
+/* Subtítulo personalizado */
+#subtitulo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  color: #00ffff;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* ----------------------------- */
+/* Área principal de contenido  */
+/* ----------------------------- */
+
 main {
-    flex: 1;
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  color: #fff;
+  font-family: Arial, sans-serif;
 }
 
-/* Contenedor de productos: flex wrap para que se adapten */
+/* Etiquetas dentro de main */
+main label {
+  font-weight: bold;
+  display: block;
+  margin-left: 20px;
+  margin-bottom: 8px;
+  color: #00ffff;
+  font-size: 20px;
+  text-align: left;
+}
+
+/* Selectores dentro de main */
+main select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #00ffff;
+  background-color: #001f1f;
+  color: #00ffff;
+  font-size: 16px;
+  transition: border 0.3s ease;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* ----------------------------- */
+/* Filtros por categoría        */
+/* ----------------------------- */
+
+.filtro-categoria {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filtro-categoria label {
+  text-align: center;
+}
+
+.filtro-categoria label,
+.filtro-categoria select {
+  color: #00ffff;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* ----------------------------- */
+/* Contenedor de productos      */
+/* ----------------------------- */
+
 .productos-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  color: #fff;
+  padding: 0 10px;
 }
 
-/* Cada producto: caja con sombra, borde redondeado, centrado y tamaño fijo */
+/* Estilos de cada producto */
 .producto {
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(13, 252, 244, 1) 100%);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 200px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  transition: box-shadow 0.3s ease;
+}
 
-background: #020024;
-background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(13, 252, 244, 1) 100%);
+/* Hover en producto */
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 0 15px rgba(0, 255, 255, 0.4),
+    0 0 25px #00ffff,
+    0 0 45px rgba(0, 255, 255, 0.8);
+}
 
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    width: 200px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    overflow: hidden;
-    display: flex;
+/* Título dentro del producto */
+.producto h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #00ffff;
+}
+
+/* Descripción corta del producto */
+.producto p {
+  font-size: 14px;
+  color: #e0e0e0;
+}
+
+/* Imagen del producto */
+.producto img {
+  width: 85%;
+  max-height: 150px;
+  object-fit: contain;
+  border-bottom: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+/* Descripción larga del producto */
+.producto .descripcion {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  min-height: 50px;
+}
+
+/* Precio del producto */
+.producto .precio {
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+/* ----------------------------- */
+/* Animaciones                  */
+/* ----------------------------- */
+
+/* Definición de la animación */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Aplicación de animación a elementos clave */
+main > *,
+h1, h2, h3, h4,
+#subtitulo,
+.productos-container,
+.producto,
+.filtro-categoria,
+.filtro-categoria label,
+.filtro-categoria select {
+  animation: fadeSlideUp 0.8s ease-in-out;
+}
+
+/* ----------------------------- */
+/* Responsividad para pantallas */
+/* ----------------------------- */
+
+@media (max-width: 768px) {
+  /* Títulos centrados en móviles */
+  h1, h2, h3, h4,
+  #subtitulo {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  /* Ajuste en main */
+  main label,
+  main select {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Contenedor de productos en columna */
+  .productos-container {
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+  }
 
-.producto:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-/* Imagen del producto: ocupa 85% del ancho, max altura 85%, borde abajo */
-.producto img {
-    width: 85%;
-    max-height: 150px;
-    object-fit: contain;
-    border-bottom: 1px solid #ccc;
-    margin-top: 10px;
-}
-
-/* Descripción del producto: padding y tamaño de fuente legible */
-.producto .descripcion {
-    padding: 10px;
-    font-size: 16px;
-    color: #fff;
-    min-height: 50px;
-}
-
-/* Precio: destacado en rojo, tamaño y padding */
-.producto .precio {
-    font-weight: bold;
-    font-size: 18px;
-    color: #bc1515;
-    padding-bottom: 10px;
+  /* Cada producto ocupa casi toda la pantalla */
+  .producto {
+    width: 90%;
+  }
 }

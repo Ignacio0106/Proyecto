@@ -1,100 +1,92 @@
-/* Estilo general del main */
+/* ==== Estilo general del contenedor principal ==== */
 main {
     flex: 1;
     padding: 40px 20px;
     max-width: 1000px;
     margin: 0 auto;
-    background-color: #f9f9f9;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background: #000;
+    border-radius: 16px;
+    box-shadow: #000;
     font-family: 'Bebas Neue', sans-serif;
+    color: #e0e0e0;
+    animation: fadeSlideUp 1s ease-in-out;
 }
 
-/* Títulos */
-h1, h2 {
+/* ==== Títulos generales (h1, h2, h3) ==== */
+h1, h2, h3 {
     font-family: 'Bebas Neue', sans-serif;
-    color: #2e5f68;
-    margin-bottom: 10px;
+    color: #00ffff;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.6);
 }
 
 h1 {
     font-size: 36px;
-    margin-bottom: 40px;
-    text-align: center;
+    margin-bottom: 30px;
 }
 
 h2 {
-    font-size: 26px;
+    font-size: 28px;
     margin-top: 30px;
     margin-bottom: 15px;
-    text-align: center;
 }
 
-/* Subtítulo opcional */
 h3 {
-    font-family: 'Bebas Neue', sans-serif;
-    color: #1f4a5a;
+    font-size: 24px;
     margin-top: 40px;
     margin-bottom: 15px;
-    border-bottom: 2px solid #2e5f68;
+    border-bottom: 2px solid #00ffff;
     padding-bottom: 5px;
 }
 
-/* Contenido general */
+/* ==== Secciones de contenido general ==== */
 .seccion {
     margin-bottom: 50px;
     text-align: center;
+    animation: fadeSlideUp 0.8s ease-in-out;
 }
 
 .seccion p,
 .seccion ul {
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.8;
     max-width: 700px;
     margin: 0 auto;
-    color: #333;
+    color: #f0f0f0;
 }
 
-/* Listas */
+/* ==== Estilo para listas ==== */
 ul {
     padding-left: 20px;
     text-align: left;
 }
 
 ul li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
-/* Testimonios */
+/* ==== Bloques de testimonios ==== */
 blockquote {
     font-style: italic;
-    background: #e0f0f2;
-    border-left: 6px solid #2e5f68;
+    background: radial-gradient(circle at 0% 50%, rgba(0, 144, 148, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    border-left: 6px solid #00ffff;
     margin: 20px auto;
-    padding: 15px 20px;
-    border-radius: 8px;
-    color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    color: #fff;
     max-width: 700px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
 }
 
 cite {
     display: block;
     text-align: right;
     font-size: 0.9em;
-    color: #555;
+    color: #ccc;
     margin-top: 10px;
 }
 
-
-/* Encabezado */
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    padding: 20px;
-}
-
+/* ==== Logo y nombre del sitio ==== */
 .logo {
     width: 60px;
     margin-right: 10px;
@@ -103,6 +95,118 @@ header {
 .nombre-sitio {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 32px;
-    color: white;
+    color: #00ffff;
     letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+/* ==== Grupo de cajas (Historia, Misión, Visión, etc.) ==== */
+.grupo-cajas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+    animation: fadeSlideUp 0.8s ease-in-out;
+}
+
+.caja {
+    background-color: #111;
+    border: 2px solid #00ffff;
+    border-radius: 16px;
+    padding: 20px;
+    flex: 1 1 280px;
+    max-width: 320px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.caja:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 0 25px #00ffff,
+        0 0 45px rgba(0, 255, 255, 0.8);
+}
+
+/* ==== Animación de entrada (fade + desplazamiento) ==== */
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==== Efectos hover en bloques de testimonios ==== */
+.testimoniosss {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.testimoniosss:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 0 15px rgba(0, 255, 255, 0.4),
+    0 0 25px #00ffff,
+    0 0 45px rgba(0, 255, 255, 0.8);
+}
+
+/* ==== Responsividad para tablets y móviles ==== */
+@media (max-width: 768px) {
+    main {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .grupo-cajas {
+        gap: 16px;
+    }
+
+    .caja {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .seccion p,
+    .seccion ul {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .nombre-sitio {
+        font-size: 24px;
+    }
 }
