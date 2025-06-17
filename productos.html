@@ -9,59 +9,29 @@
     <title>Proyecto Restaurante</title>
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <img src="./img/logo.png" alt="Logo" />
-                <span>LA CHISMOSSA</span>
+    <header class="header">
+        <a class="logoJunto" href="index.html">
+            <img class="imagenLogo" src="./img/logo.png" alt="Logo"/>
+                <span class="letraLogo">LA CHISMOSSA</span>
         </a>
+        
+        <input type="checkbox"  id="menu-check"/>
+        <label for="menu-check" class="labelMenu"><img src="img/menu.png" alt="Seleccionar menu"></label>
+
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li><a class="menu-item" href="index.html">Inicio</a></li>
+                <li><a class="menu-item" href="productos.html">Productos</a></li>
+                <li><a class="menu-item" href="nosotros.html">Nosotros</a></li>
+                <li><a class="menu-item" href="blog.html">Blog</a></li>
+                <li><a class="menu-item" href="contacto.html">Contacto</a></li>
+                <li><a class="menu-item" href="preguntas.html">Preguntas Frecuentes</a></li>
+            </ul>
+        </nav>
+
     </header>
 
-    <section class="barra-menu">
-    <input type="checkbox"  id="menu-check"/>
-    <label for="menu-check" class="labelMenu"><img src="img/lineasMenu.png" alt="Seleccionar menu"></label>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">
-                    <!--Icono-->
-                    Inicio
-                </a>
-            </li>
-            <li>
-                <a href="productos.html">
-                    <!--Icono-->
-                    Productos
-                </a>
-            </li>
-            <li>
-                <a href="nosotros.html">
-                    <!--Icono-->
-                    Nosotros
-                </a>
-            </li>
-            <li>
-                <a href="blog.html">
-                    <!--Icono-->
-                    Blog
-                </a>
-            </li>
-            <li>
-                <a href="contacto.html">
-                    <!--Icono-->
-                    Contacto
-                </a>
-            </li>
-            <li>
-                <a href="preguntas.html">
-                    <!--Icono-->
-                    Preguntas Frecuentes
-                </a>                
-            </li>
-        </ul>
-    </nav>
-    </section>
-
-    <main>
+    <main class="contenido-scroll">
         <label for="categoria" style="font-family: Arial, sans-serif; font-weight: bold; margin-left: 20px;">Seleccione categoría:</label>
         <select id="categoria" style="margin: 10px 20px; padding: 5px;">
             <option value="todos">Todos</option>

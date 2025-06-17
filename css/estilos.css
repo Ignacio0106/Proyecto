@@ -1,17 +1,149 @@
 *{
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-/* Fuente general y fondo */
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
+    background-color: #000;
+    color: #000;
     margin: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+.header{
+    background-color: #2b2b2b;
+    padding: 0.5em;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu-check{
+    display: none;
+}
+.labelMenu{
+    display: none;
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+.logoJunto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2em; 
+    margin-left: 1em;
+    line-height: 1;/*No se que es*/
+}
+.imagenLogo{
+    width: 80px;
+    padding: 0%;
+    margin-right: 0.5em;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #0a0a0a;
+    margin-right: 1em;
+}
+
+.menu-lista{
+    display: flex;
+    list-style: none;
+    padding: 1em;
+}
+
+.menu-item{
+    display: flex;
+    margin: 0.5em;
+    padding: 0.5em 0.8em;;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 8px;
+}
+
+.menu:hover{
+    background-color: #3a3a3a;
+    color: #f5c518;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-item:hover{
+    background-color: #0a0a0a;
+    color: #f5c518;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media (max-width: 1055px) {
+  .labelMenu {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 18%; /* debajo del header */
+    left: 0;
+    width: 50%;
+    background-color: #0a0a0a;
+    border-top: 1px solid #333;
+    z-index: 999;
+  }
+
+.menu-lista{
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+}
+
+.menu-item{
+    margin: 0.12em;
+    padding: 0.5em;
+
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2em;
+}
+
+  /* Mostrar menú al hacer clic en el checkbox */
+    #menu-check:checked ~ .menu {
+        display: flex;
+    }
+}
+
+footer {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 1em;
+    font-family: Arial, sans-serif;
+    position: sticky;
+    bottom: 0;
+    z-index: 999;
+}
+
+footer a {
+    color: #f5c518;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /* HTML y body para que ocupen toda la altura y usen flex columna */
@@ -20,28 +152,10 @@ body {
 } */
 
 /* Header: fondo negro, centrado y padding */
-header {
-    background-color: black;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-header img {
-    width: 100px;
-    margin-right: 10px;
-}
-
-header span {
-    font-family: 'Bebas Neue', sans-serif;
-    color: white;
-    font-size: 30px; 
-    line-height: 1;
-}
 
 /* Navegación: fondo azul oscuro, sticky arriba, con efectos hover */
-.barra-menu{
+/* .barra-menu{
     background-color: #2e5f68;
     padding: 10px 0px;
 }
@@ -59,13 +173,9 @@ header span {
     background-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transform: translateX(2px)
-}
+} */
 
-#menu-check{
-    display: none;
-}
-
-nav {
+/* nav {
     background-color: #2e5f68;
     padding: 1px 0;
     position: sticky;
@@ -91,38 +201,15 @@ nav ul li a {
     padding: 10px 15px;
     font-weight: bold;
     transition: background-color 0.3s, transform 0.2s;
-}
+} */
 
-nav ul li a:hover {
-    background-color: #4a94a1;
-    border-radius: 5px;
-    transform: scale(1.05);
-}
 
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        width: 100%;
-        background-color: #2e5f68;
-    }
-    #menu-check:checked + label + nav ul {
-        display: flex;
-    }
-    .barra-menu .labelMenu img {
-        display: block;
-    }
-}
-
-/* Títulos con fuente Bebas Neue y color principal */
-h1, h2 {
+/* h1, h2 {
     font-family: 'Bebas Neue', sans-serif;
     color: #2e5f68;
     margin-bottom: 10px;
 }
 
-/* Títulos categorías y subcategorías */
 h3 {
     font-family: 'Bebas Neue', sans-serif;
     color: #1f4a5a;
@@ -138,45 +225,4 @@ h4 {
     margin-left: 15px;
     margin-bottom: 10px;
     font-style: italic;
-}
-
-/* Estilo para línea divisoria entre categorías Creo que se puedde eliminar */
-
-hr {
-    width: 100%;
-    border: 1px solid #f70000;
-    margin: 40px 0;
-    opacity: 0.5;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-ul li {
-    margin-bottom: 8px;
-} 
-
-
-
-/* Footer: fondo negro, texto blanco centrado */
-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    font-family: Arial, sans-serif;
-    position: sticky;
-    bottom: 0;
-    z-index: 999;
-}
-
-footer a {
-    color: #f5c518;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
+} */

@@ -13,59 +13,26 @@
     <title>Proyecto Restaurante</title>
 </head>
 <body>
-    <header style="display: flex; justify-content: center; align-items: center; background-color: black; padding: 20px;">
-    <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
-        <!-- Imagen logo -->
-        <img src="./img/logo.png" alt="Logo"/>
+    <header class="header">
+        <a class="logoJunto" href="index.html">
+            <img class="imagenLogo" src="./img/logo.png" alt="Logo"/>
+                <span class="letraLogo">LA CHISMOSSA</span>
+        </a>
+        
+        <input type="checkbox"  id="menu-check"/>
+        <label for="menu-check" class="labelMenu"><img src="img/menu.png" alt="Seleccionar menu"></label>
 
-        <!-- Contenedor del texto -->
-            <span>LA CHISMOSSA</span>
-    </a>
-</header>
-<section class="barra-menu">
-    <input type="checkbox"  id="menu-check"/>
-    <label for="menu-check" class="labelMenu"><img src="img/lineasMenu.png" alt="Seleccionar menu"></label>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">
-                    <!--Icono-->
-                    Inicio
-                </a>
-            </li>
-            <li>
-                <a href="productos.html">
-                    <!--Icono-->
-                    Productos
-                </a>
-            </li>
-            <li>
-                <a href="nosotros.html">
-                    <!--Icono-->
-                    Nosotros
-                </a>
-            </li>
-            <li>
-                <a href="blog.html">
-                    <!--Icono-->
-                    Blog
-                </a>
-            </li>
-            <li>
-                <a href="contacto.html">
-                    <!--Icono-->
-                    Contacto
-                </a>
-            </li>
-            <li>
-                <a href="preguntas.html">
-                    <!--Icono-->
-                    Preguntas Frecuentes
-                </a>                
-            </li>
-        </ul>
-    </nav>
-    </section>
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li><a class="menu-item" href="index.html">Inicio</a></li>
+                <li><a class="menu-item" href="productos.html">Productos</a></li>
+                <li><a class="menu-item" href="nosotros.html">Nosotros</a></li>
+                <li><a class="menu-item" href="blog.html">Blog</a></li>
+                <li><a class="menu-item" href="contacto.html">Contacto</a></li>
+                <li><a class="menu-item" href="preguntas.html">Preguntas Frecuentes</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <h2>Blog</h2>
         <section class="contenido-blog">

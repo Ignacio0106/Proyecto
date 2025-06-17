@@ -1,0 +1,38 @@
+/* Main Content Styling */
+.contenido-scroll {
+    flex-grow: 1; /* Allows main content to take up available space */
+    padding: 20px; /* General padding for the main content area */
+    max-width: 900px; /* Constrain width for readability */
+    margin: auto; /* Center the content block */
+    color: #e0e0e0; /* Light gray text for main content */
+    line-height: 1.6; /* Better readability */
+}
+
+.contenido-scroll h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f5c518; /* Title color */
+}
+
+.contenido-scroll h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #ffffff; /* Heading color */
+}
+
+.contenido-scroll p {
+    margin-bottom: 15px;
+}
+
+.contenido-scroll ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.contenido-scroll li {
+    margin-bottom: 5px;
+}
