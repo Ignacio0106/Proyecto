@@ -95,7 +95,7 @@ body {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 18%; /* debajo del header */
+    top: 15%; /* debajo del header */
     left: 0;
     width: 50%;
     background-color: #0a0a0a;
