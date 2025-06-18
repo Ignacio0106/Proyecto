@@ -80,13 +80,13 @@ body {
 
 .menu:hover {
     background-color: #3a3a3a;
-    color: #f5c518;
+    color: #00ffff;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .menu-item:hover {
     background-color: #0a0a0a;
-    color: #f5c518;
+    color: #00ffff;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -141,7 +141,7 @@ footer {
 }
 
 footer a {
-    color: #f5c518;
+    color: #00ffff;
     text-decoration: none;
     font-weight: bold;
 }
