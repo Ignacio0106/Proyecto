@@ -102,7 +102,7 @@ body {
         position: absolute;
         top: 100%; /* Justo debajo del header */
         left: 0;
-        width: 100%; /* Puedes cambiar a 50% si prefieres */
+        width: 50%; /* Puedes cambiar a 50% si prefieres */
         background-color: #0a0a0a;
         border-top: 1px solid #333;
         z-index: 999;
