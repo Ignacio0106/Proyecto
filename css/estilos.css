@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -14,40 +14,44 @@ body {
     flex-direction: column;
 }
 
-.header{
+.header {
     background-color: #2b2b2b;
     padding: 0.5em;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative; /* Necesario para posicionar el menú */
 }
-#menu-check{
+
+#menu-check {
     display: none;
 }
-.labelMenu{
+
+.labelMenu {
     display: none;
     margin-right: 0.5em;
     cursor: pointer;
 }
-.logoJunto{
+
+.logoJunto {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffff;
     text-decoration: none;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2em; 
+    font-size: 2em;
     margin-left: 1em;
-    line-height: 1;/*No se que es*/
+    line-height: 1;
 }
-.imagenLogo{
+
+.imagenLogo {
     width: 80px;
     padding: 0%;
     margin-right: 0.5em;
 }
-.menu{
+
+.menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,16 +60,16 @@ body {
     margin-right: 1em;
 }
 
-.menu-lista{
+.menu-lista {
     display: flex;
     list-style: none;
     padding: 1em;
 }
 
-.menu-item{
+.menu-item {
     display: flex;
     margin: 0.5em;
-    padding: 0.5em 0.8em;;
+    padding: 0.5em 0.8em;
     text-decoration: none;
     color: #ffffff;
     font-family: 'Bebas Neue', sans-serif;
@@ -74,52 +78,52 @@ body {
     border-radius: 8px;
 }
 
-.menu:hover{
+.menu:hover {
     background-color: #3a3a3a;
     color: #f5c518;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.menu-item:hover{
+.menu-item:hover {
     background-color: #0a0a0a;
     color: #f5c518;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* SOLO PARA PANTALLAS PEQUEÑAS */
 @media (max-width: 1055px) {
-  .labelMenu {
-    display: block;
-  }
+    .labelMenu {
+        display: block;
+    }
 
-  .menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 15%; /* debajo del header */
-    left: 0;
-    width: 50%;
-    background-color: #0a0a0a;
-    border-top: 1px solid #333;
-    z-index: 999;
-  }
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Justo debajo del header */
+        left: 0;
+        width: 100%; /* Puedes cambiar a 50% si prefieres */
+        background-color: #0a0a0a;
+        border-top: 1px solid #333;
+        z-index: 999;
+    }
 
-.menu-lista{
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-}
+    .menu-lista {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
 
-.menu-item{
-    margin: 0.12em;
-    padding: 0.5em;
+    .menu-item {
+        margin: 0.12em;
+        padding: 0.5em;
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 1.2em;
+    }
 
-    text-decoration: none;
-    color: #ffffff;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.2em;
-}
-
-  /* Mostrar menú al hacer clic en el checkbox */
+    /* Mostrar menú cuando se activa el checkbox */
     #menu-check:checked ~ .menu {
         display: flex;
     }
@@ -145,84 +149,3 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-
-/* HTML y body para que ocupen toda la altura y usen flex columna */
-/* html, body {
-    height: 100%;
-} */
-
-/* Header: fondo negro, centrado y padding */
-
-
-/* Navegación: fondo azul oscuro, sticky arriba, con efectos hover */
-/* .barra-menu{
-    background-color: #2e5f68;
-    padding: 10px 0px;
-}
-
-.barra-menu .labelMenu img{
-    display: none;
-    background-color: #2e5f68;
-    margin-left: 5px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-}
-
-.barra-menu .labelMenu img:hover{
-    background-color: rgba(0, 0, 0, 0.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transform: translateX(2px)
-} */
-
-/* nav {
-    background-color: #2e5f68;
-    padding: 1px 0;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.2s;
-} */
-
-
-/* h1, h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    color: #2e5f68;
-    margin-bottom: 10px;
-}
-
-h3 {
-    font-family: 'Bebas Neue', sans-serif;
-    color: #1f4a5a;
-    margin-top: 40px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #2e5f68;
-    padding-bottom: 5px;
-}
-
-h4 {
-    font-family: Arial, sans-serif;
-    color: #4a7c8c;
-    margin-left: 15px;
-    margin-bottom: 10px;
-    font-style: italic;
-} */
