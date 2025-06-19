@@ -18,6 +18,7 @@ body {
     background-color: #2b2b2b;
     padding: 0.5em;
     display: flex;
+    border-bottom: 1px solid #00ffff55;
     justify-content: space-between;
     align-items: center;
     position: relative; /* Necesario para posicionar el menú */
@@ -31,6 +32,7 @@ body {
     display: none;
     margin-right: 0.5em;
     cursor: pointer;
+    filter: drop-shadow(0 0 2px #00ffff);
 }
 
 .logoJunto {
@@ -49,6 +51,7 @@ body {
     width: 80px;
     padding: 0%;
     margin-right: 0.5em;
+    filter: drop-shadow(0 0 2px #00ffff);
 }
 
 .menu {
