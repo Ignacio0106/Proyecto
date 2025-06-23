@@ -139,6 +139,22 @@
 </header>
 
 <main>
+  <form class="formulario-comentario">
+                <label for="nombre" class="labelComentario">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre aquí" required>  
+
+                <label for="comentario" class="labelComentario">Comentario: </label>     
+                <textarea id="comentario" name="comentario" placeholder="Escriba su comentario aquí" rows="4" required></textarea>   
+
+                <button type="button" id="boton" onclick="guardarComentario()">Enviar</button>
+            </form>
+
+        </section>
+        <section class="comentarios-blog">
+            <h3>Comentarios Recientes</h3>
+            <ul id="lista-comentarios"></ul>
+        </section>
+
   <article>
     <h2>Sabor que enamora</h2>
     <img src="sopa.jpg" alt="Plato típico con sopa casera">
@@ -179,6 +195,6 @@
   <p>© 2025 La Chismossa. Todos los derechos reservados.</p>
   <a href="#">Síguenos en Instagram</a>
 </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>

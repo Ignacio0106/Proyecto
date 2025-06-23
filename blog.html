@@ -33,29 +33,37 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>Blog</h2>
+    <main class="main-blog">
         <section class="contenido-blog">
-            <h4>Comenta tu experiencia</h4>
-            <p>¡Bienvenido a nuestro blog! Aquí podrás compartir tus experiencias y opiniones sobre nuestros productos y servicios. Nos encantaría saber qué piensas.</p>
-            <br>    
+            <p>¡Bienvenido a nuestro blog! Aquí podrás compartir tus experiencias y opiniones sobre nuestros productos y servicios. Nos encantaría saber qué piensas.</p><br>  
             <p>Por favor, deja tu comentario a continuación:</p>
-
-            <form class="formulario-comentario">
-                <label for="nombre" class="labelComentario">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre aquí" required>  
-
-                <label for="comentario" class="labelComentario">Comentario: </label>     
-                <textarea id="comentario" name="comentario" placeholder="Escriba su comentario aquí" rows="4" required></textarea>   
-
-                <button type="button" id="boton" onclick="guardarComentario()">Enviar</button>
-            </form>
-
-        </section>
-        <section class="comentarios-blog">
-            <h3>Comentarios Recientes</h3>
-            <ul id="lista-comentarios"></ul>
-        </section>
+            <h4>Categorias</h4>
+            <section class="categorias-blog">
+                <section class="categorias">
+                    <h5>Reseñas y opiniones</h5>
+                        <ul>
+                            <li class="cuadros"></li>
+                            <li class="cuadros"></li>
+                            <li class="cuadros"></li>
+                        </ul>
+                </section>
+                <section class="categorias">
+                    <h5>Eventos y novedades</h5>
+                        <ul>
+                            <li class="cuadros"></li>
+                            <li class="cuadros"></li>
+                            <li class="cuadros"></li>
+                        </ul>
+                </section>
+                <section class="categorias">
+                    <h5>Detrás de escena</h5>
+                        <ul>
+                            <li class="cuadros"></li>
+                            <li class="cuadros"></li>
+                            <li class="cuadros"></li>
+                        </ul>
+                </section>
+            </section>
     </main>
    <footer>
     <p>&copy; 2025 La Chismossa. Todos los derechos reservados.</p>
@@ -64,6 +72,5 @@
         <a href="https://www.instagram.com/la_chismossa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
     </p>
 </footer>
-    <script src="script.js"></script>
 </body>
 </html>

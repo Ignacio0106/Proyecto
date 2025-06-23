@@ -1,19 +1,39 @@
-h2{
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.7);
+p, h4, h2 {
     color: #ffffff;
-    padding: 10px;
+        text-align: center;
+            padding: 10px;
 }
-
-h4, p{
-    text-align: center;
-}
-
-.contenido-blog{
+.categorias-blog{
+    background-color: #585858;
+    max-width: 1000px;
+    margin: auto;
     padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+    list-style-type: none;
 }
+.categorias h5{
+    border-bottom: #ffffff 3px solid;
+}
+.categorias-blog ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: #68482e;
+    padding: 20px;
+    list-style-type: none;
+    
+}
+.categoria-blog-item{
+    background-color: #59682e;
+    padding: 20px;
+}
+.cuadros{
+    background-color: #2e683b;
+    max-width: 200px;
+    padding: 120px;
+    padding: auto;
+}
+
 
 .formulario-comentario {
     display: flex;
