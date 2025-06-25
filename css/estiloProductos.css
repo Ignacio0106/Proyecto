@@ -158,14 +158,17 @@ main select {
 
 /* Descripción larga del producto */
 .producto .descripcion {
+  font-family: Georgia, serif;
+  font-weight: bold;
   padding: 10px;
-  font-size: 16px;
+  font-size: 20px;
   color: #fff;
   min-height: 50px;
 }
 
 /* Precio del producto */
 .producto .precio {
+  font-family: Georgia, serif;
   font-weight: bold;
   font-size: 18px;
   padding-bottom: 10px;
