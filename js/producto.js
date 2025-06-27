@@ -8,36 +8,36 @@
             {categoria: 'bocas', subcategoria: 'clásicas', img: 'img/logo.png', alt: 'Papas Fritas', descripcion: 'Papas Fritas', precio: '₡2,500'},
             {categoria: 'bocas', subcategoria: 'clásicas', img: 'img/logo.png', alt: 'Chicharrones', descripcion: 'Chicharrones', precio: '₡2,500'},
             {categoria: 'bocas', subcategoria: 'clásicas', img: 'img/logo.png', alt: 'Alitas', descripcion: 'Alitas', precio: '₡2,500'},
-            {categoria: 'bocas', subcategoria: 'clásicas', img: 'img/alitasPapa.jpeg', alt: 'Alitas con papas', descripcion: 'Alitas con papas', precio: '₡3,000'},
+            {categoria: 'bocas', subcategoria: 'clásicas', img: 'img/polloPapas.png', alt: 'Alitas con papas', descripcion: 'Alitas con papas', precio: '₡3,000'},
 
             {categoria: 'bocas', subcategoria: 'típicas', img: 'img/logo.png', alt: 'Frijoles a las Trancas', descripcion: 'Frijoles a las Trancas', precio: '₡2,500'},
             {categoria: 'bocas', subcategoria: 'típicas', img: 'img/logo.png', alt: 'Higado Encebollado', descripcion: 'Higado Encebollado', precio: '₡2,500'},
             {categoria: 'bocas', subcategoria: 'típicas', img: 'img/logo.png', alt: 'Bistec Encebollado', descripcion: 'Bistec Encebollado', precio: '₡2,500'},
-            {categoria: 'bocas', subcategoria: 'típicas', img: 'img/ceviche.jpeg', alt: 'Ceviche', descripcion: 'Ceviche', precio: '₡2,500'},
-            {categoria: 'bocas', subcategoria: 'típicas', img: 'img/chifrijo.jpeg', alt: 'Chifrijo', descripcion: 'Chifrijo', precio: '₡3,500'},
+            {categoria: 'bocas', subcategoria: 'típicas', img: 'img/ceviche.png', alt: 'Ceviche', descripcion: 'Ceviche', precio: '₡2,500'},
+            {categoria: 'bocas', subcategoria: 'típicas', img: 'img/chifrijo.png', alt: 'Chifrijo', descripcion: 'Chifrijo', precio: '₡3,500'},
             
 
 
-            {categoria: 'bebidas', subcategoria: 'gaseosa', img: 'img/refresco.jpg', alt: 'Gaseosas', descripcion: 'Refresco Gaseoso', precio: '₡1,500'},
+            {categoria: 'bebidas', subcategoria: 'gaseosa', img: 'img/gaseosa.png', alt: 'Gaseosas', descripcion: 'Refresco Gaseoso', precio: '₡1,500'},
             {categoria: 'bebidas', subcategoria: 'gaseosa', img: 'img/jugo.jpg', alt: 'Soda', descripcion: 'Soda', precio: '₡1,500'},
 
-            {categoria: 'bebidas', subcategoria: 'natural', img: 'img/gaseosa.jpg', alt: 'Té Frio', descripcion: 'Té Frio', precio: '₡1,500'},
+            {categoria: 'bebidas', subcategoria: 'natural', img: 'img/teFrio.png', alt: 'Té Frio', descripcion: 'Té Frio', precio: '₡1,500'},
             
-            {categoria: 'bebidas', subcategoria: 'cerveza', img: 'img/gaseosa2.jpg', alt: 'Cerveza Nacional', descripcion: 'Cerveza Nacional', precio: '₡1,500'},
+            {categoria: 'bebidas', subcategoria: 'cerveza', img: 'img/cerveza.png', alt: 'Cerveza Nacional', descripcion: 'Cerveza Nacional', precio: '₡1,500'},
 
-            {categoria: 'bebidas', subcategoria: 'otros', img: 'img/gaseosa2.jpg', alt: 'Bebida en lata(varios)', descripcion: 'Bebida en lata(varios)', precio: '₡2,000'},
+            {categoria: 'bebidas', subcategoria: 'otros', img: 'img/lata.png', alt: 'Bebida en lata(varios)', descripcion: 'Bebida en lata(varios)', precio: '₡2,000'},
 
-            {categoria: 'bebidas', subcategoria: 'bebidas Preparadas', img: 'img/evento1.jpg', alt: 'Sangria', descripcion: 'Sangria', precio: '₡2,000'},
-            {categoria: 'bebidas', subcategoria: 'bebidas Preparadas', img: 'img/evento1.jpg', alt: 'Mamaditas', descripcion: 'Mamaditas', precio: '₡1,500'}, 
+            {categoria: 'bebidas', subcategoria: 'bebidas Preparadas', img: 'img/sangria.png', alt: 'Sangria', descripcion: 'Sangria', precio: '₡2,000'},
+            {categoria: 'bebidas', subcategoria: 'bebidas Preparadas', img: 'img/mamadita.png', alt: 'Mamaditas', descripcion: 'Mamaditas', precio: '₡1,500'}, 
 
             {categoria: 'platosVariados', subcategoria: '', img: 'img/evento1.jpg', alt: 'Chifrijo', descripcion: 'Chifrijo', precio: '₡3,500'},
             {categoria: 'platosVariados', subcategoria: '', img: 'img/evento1.jpg', alt: 'Salchipapas', descripcion: 'Salchipapas', precio: '₡3,000'},
 
-            {categoria: 'tragos', subcategoria: '', img: 'img/evento1.jpg', alt: 'Johnnie Black', descripcion: 'Johnnie Black', precio: '₡3,500'},
-            {categoria: 'tragos', subcategoria: '', img: 'img/evento1.jpg', alt: 'Flor de Caña 18', descripcion: 'Flor de Caña 18', precio: '₡3,500'},
-            {categoria: 'tragos', subcategoria: '', img: 'img/evento1.jpg', alt: 'Jack Daniels', descripcion: 'Jack Daniels', precio: '₡3,000'},
-            {categoria: 'tragos', subcategoria: '', img: 'img/evento1.jpg', alt: 'Tequila Don Julio', descripcion: 'Tequila Don Julio', precio: '₡3,500'},
-            {categoria: 'tragos', subcategoria: '', img: 'img/evento1.jpg', alt: 'Baileys', descripcion: 'Baileys', precio: '₡2,000'}, 
+            {categoria: 'tragos', subcategoria: '', img: 'img/jonnieBlack.png', alt: 'Johnnie Black', descripcion: 'Johnnie Black', precio: '₡3,500'},
+            {categoria: 'tragos', subcategoria: '', img: 'img/florCaña18.png', alt: 'Flor de Caña 18', descripcion: 'Flor de Caña 18', precio: '₡3,500'},
+            {categoria: 'tragos', subcategoria: '', img: 'img/jackDaniel.png', alt: 'Jack Daniels', descripcion: 'Jack Daniels', precio: '₡3,000'},
+            {categoria: 'tragos', subcategoria: '', img: 'img/tequilaDonJulio.png', alt: 'Tequila Don Julio', descripcion: 'Tequila Don Julio', precio: '₡3,500'},
+            {categoria: 'tragos', subcategoria: '', img: 'img/baileys.png', alt: 'Baileys', descripcion: 'Baileys', precio: '₡2,000'}, 
         ];
 
         const textosSubtitulo = {
