@@ -5,20 +5,41 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     background-color: #000;
-    color: #000;
     margin: 0;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #FFC107; /* Títulos en dorado */
+    text-align: center;
+    margin-bottom: 0.6em;
+}
+
+h1 { font-size: 3.8em; }
+h2 { font-size: 2.5em; }
+h3 { font-size: 1.8em; } /* Para títulos dentro de los servicios */
+
+p {
+    line-height: 1.7;
+    margin-bottom: 1em;
+    text-align: center;
+    color: #ffffff;
+}
+
+strong {
+    color: #00FFFF; /* Resaltar texto importante en cian */
+    font-weight: 700; /* Asegura que sea negrita */
 }
 
 .header {
     background-color: #2b2b2b;
     padding: 0.5em;
     display: flex;
-    border-bottom: 1px solid #00ffff55;
+    border-bottom: 1px solid #FFC107;
     justify-content: space-between;
     align-items: center;
     position: relative; /* Necesario para posicionar el menú */
@@ -32,9 +53,12 @@ body {
     display: none;
     margin-right: 0.5em;
     cursor: pointer;
-    filter: drop-shadow(0 0 2px #00ffff);
+    filter: drop-shadow(0 0 4px #00ffff);
 }
-
+.labelMenu:hover{
+        filter: drop-shadow(0 0 4px #FFC107);
+        transition: 0.6s;
+}
 .logoJunto {
     display: flex;
     justify-content: center;
@@ -48,12 +72,23 @@ body {
 }
 
 .imagenLogo {
-    width: 80px;
+    width: 95px;
     padding: 0%;
     margin-right: 0.5em;
-    filter: drop-shadow(0 0 2px #00ffff);
+    filter: drop-shadow(0 0 5px #00ffff);
 }
-
+.imagenLogo:hover{
+    filter: drop-shadow(0 0 5px #FFC107);
+    transition: 0.6s;
+}
+.letraLogo{
+    font-size: 1.5em;
+}
+.letraLogo:hover{
+    color: #FFC107;
+    filter: drop-shadow(0 0 1px #00ffff);
+    transition: 0.6s;
+}
 .menu {
     display: flex;
     justify-content: center;
@@ -80,32 +115,31 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
     border-radius: 8px;
 }
-
-.menu:hover {
-    background-color: #3a3a3a;
-    color: #00ffff;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
 .menu-item:hover {
-    background-color: #0a0a0a;
-    color: #00ffff;
+    background: #00FFFF;
+    background: linear-gradient(90deg, rgba(0, 255, 255, 1) 0%, rgba(255, 193, 7, 1) 100%);
+    color: #000;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* SOLO PARA PANTALLAS PEQUEÑAS */
 @media (max-width: 1055px) {
+    .imagenLogo {
+    width: 80px;
+}
+.letraLogo{
+    font-size: 1.2em;
+}
     .labelMenu {
         display: block;
     }
-
     .menu {
         display: none;
         flex-direction: column;
         position: absolute;
         top: 100%; /* Justo debajo del header */
         left: 0;
-        width: 50%; /* Puedes cambiar a 50% si prefieres */
+        width: 100%; /* Puedes cambiar a 50% si prefieres */
         background-color: #0a0a0a;
         border-top: 1px solid #333;
         z-index: 999;
@@ -135,11 +169,12 @@ body {
     width: 30px;
     height: 30px;
     margin-right: 0.5em;
-    background-color: #000;
-    filter: drop-shadow(0 0 8px #00ffff);
+    vertical-align: middle;
+    filter: drop-shadow(0 0 8px #FFC107);
 }
 footer {
     background-color: #2b2b2b;
+    border-top: 1px solid #FFC107;;
     color: #e0e0e0;
     text-align: center;
     padding: 1em;
@@ -147,14 +182,25 @@ footer {
     position: sticky;
     bottom: 0;
     z-index: 999;
+    padding-top: 1em;
 }
-
+.text-footer{
+    margin-bottom: 0;
+}
 footer a {
-    color: #00ffff;
+    color: #FFC107;
     text-decoration: none;
     font-weight: bold;
 }
 
 footer a:hover {
     text-decoration: underline;
+    color: #ffffff;
+    filter: drop-shadow(0 0 10px #00ffff);
+    transition: 0.6s;
 }
+.logoInsta:hover {
+    filter: drop-shadow(0 0 10px #00ffff); 
+    transition: 0.6s;
+} 
+

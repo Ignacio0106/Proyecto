@@ -1,48 +1,48 @@
+
 // 1. Configura tu Firebase
-const firebaseConfig = {
-  databaseURL: "https://proyecto-64740-default-rtdb.firebaseio.com/",
-  apiKey: "AIzaSyAu20FX65lH1e2wF1WZrAxqD51fkwU8tEI",
-  authDomain: "proyecto-64740.firebaseapp.com",
-  projectId: "proyecto-64740",
-  storageBucket: "proyecto-64740.firebasestorage.app",
-  messagingSenderId: "477836688647",
-  appId: "1:477836688647:web:f0203c7efb9931cab059a2",
-  measurementId: "G-1QH9DYH30Y"
+  const firebaseConfig = {
+  apiKey: "AIzaSyDruI3u1bE7QTIZC0_a-9qZBD91gRZwXDA",
+  authDomain: "proyecto-3dba2.firebaseapp.com",
+  projectId: "proyecto-3dba2",
+  storageBucket: "proyecto-3dba2.firebasestorage.app",
+  messagingSenderId: "662505424507",
+  appId: "1:662505424507:web:05eaf1b16ac1b6cc61c4de",
+  databaseURL: "https://console.firebase.google.com/u/1/project/proyecto-3dba2/database/proyecto-3dba2-default-rtdb/data/~2F"
 };
 
 firebase.initializeApp(firebaseConfig);
-const db = firebase.database();
+  const db = firebase.database();
 
-// 2. Guardar comentario
-function guardarComentario() {
-  const usuario = document.getElementById("nombre").value.trim();
-    if (usuario === "") return;
-  const texto = document.getElementById("comentario").value.trim();
-  if (texto === "") return;
-  const nuevoComentario = db.ref("comentarios").push();
-  nuevoComentario.set({
-    usuario: usuario,
-    comentario: texto,
-    fecha: new Date().toISOString()
-  });
-  document.getElementById("comentario").value = "";
-  document.getElementById("nombre").value = "";
-}
+  // Guardar comentario
+  function guardarComentario() {
+    const nombre = document.getElementById("nombre").value.trim();
+    const texto = document.getElementById("comentario").value.trim();
+    if (!nombre || !texto) return;
 
-// 3. Mostrar comentarios en tiempo real
-db.ref("comentarios").on("value", (snapshot) => {
-  const lista = document.getElementById("lista-comentarios");
-  lista.innerHTML = "";
-  snapshot.forEach((child) => {
-      const { usuario, comentario, fecha } = child.val();
-      const item = document.createElement("li");
-      const fechaFormateada = new Date(fecha).toLocaleString("es-ES", {
-      dateStyle: "short", timeStyle: "short"
-    });
-    item.textContent = child.val().usuario + ": " + child.val().comentario + " (" + fechaFormateada + ")";
-    lista.appendChild(item);
-  });
+db.ref("comentarios").push({
+  usuario: nombre,
+  comentario: texto,
+  fecha: new Date().toISOString()
 });
+
+document.getElementById("nombre").value = "";
+document.getElementById("comentario").value = "";
+  }
+
+  // Mostrar comentarios
+  db.ref("comentarios").on("value", (snapshot) => {
+    const lista = document.getElementById("lista-comentarios");
+    lista.innerHTML = "";
+    snapshot.forEach((child) => {
+      const { usuario, comentario, fecha } = child.val();
+      const fechaFormateada = new Date(fecha).toLocaleString("es-ES", {
+        dateStyle: "short", timeStyle: "short"
+      });
+      const item = document.createElement("li");
+      item.innerHTML = `<strong>${usuario}</strong>: ${comentario} <br><small>${fechaFormateada}</small>`;
+      lista.appendChild(item);
+    });
+  });
 
 /* Por si se necesita eliminar el ultimo comentario
 Hay que agregar esto al html

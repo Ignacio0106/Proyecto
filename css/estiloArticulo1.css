@@ -1,0 +1,99 @@
+body {
+  background-color: #0c1218;
+  color: #ffffff;
+}
+main {
+  margin: 0 ;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+article img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+aside {
+  background-color: #1e1e1e;
+  border-left: 3px solid #00ffff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+aside h3 {
+  color: #00ffff;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside li {
+  margin: 0.5rem 0.5rem;
+}
+
+aside a {
+  text-decoration: none;
+  color: #ffc107;
+}
+
+aside a:hover {
+  text-decoration: underline;
+}
+
+/* Comentarios */
+.comentarios-blog {
+  margin-top: 2rem;
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid #00ffff;
+}
+
+.formulario-comentario {
+  display: flex;
+  flex-direction: column;
+}
+
+.labelComentario {
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #ffc107;
+}
+
+input, textarea {
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 5px;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+#boton {
+  margin-top: 1.5rem;
+  background-color: #00ffff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+#boton:hover {
+    transition: 0.3s;
+    background-color: #00cccc;
+}
+
+.comentario {
+  background-color: #333;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  color: #f0f0f0;
+}

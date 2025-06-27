@@ -47,16 +47,16 @@
             <h2>Formulario de Contacto</h2>
             <form id="contactoForm">
                 <label class="labelFormulario" for="nombre">Nombre completo:</label>
-                <input class="labelFormulario" type="text" id="nombre" name="nombre" required />
+                <input class="labelFormulario" type="text" id="nombre" name="nombre" placeholder="Escriba su nombre aquí" required />
 
                 <label class="labelFormulario" for="correo">Correo electrónico:</label>
-                <input class="labelFormulario" type="email" id="correo" name="correo" required />
+                <input class="labelFormulario" type="email" id="correo" name="correo" placeholder="Escriba su correo aquí" required />
 
                 <label class="labelFormulario" for="telefono">Teléfono:</label>
-                <input class="labelFormulario" type="tel" id="telefono" name="telefono" />
+                <input class="labelFormulario" type="tel" id="telefono" name="telefono" placeholder="Escriba su telefono aquí" required/>
 
                 <label class="labelFormulario" for="asunto">Asunto:</label>
-                <input class="labelFormulario" type="text" id="asunto" name="asunto" />
+                <input class="labelFormulario" type="text" id="asunto" name="asunto" placeholder="Escriba su asunto aquí" required/>
 
                 <label class="labelFormulario" for="tipo">Tipo de consulta:</label>
                 <select class="labelFormulario" id="tipo" name="tipo">
@@ -67,7 +67,7 @@
                 </select>
 
                 <label class="labelFormulario" for="mensaje">Mensaje:</label>
-                <textarea class="labelFormulario" id="mensaje" name="mensaje" rows="4" required></textarea>
+                <textarea class="labelFormulario" id="mensaje" name="mensaje" rows="4" placeholder="Escriba su mensaje aquí" required></textarea>
 
                 <button type="submit">Enviar</button>
             </form>
@@ -79,14 +79,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 La Chismossa. Todos los derechos reservados.</p>
-        <p>
-            Síguenos en
-            <a href="https://www.instagram.com/la_chismossa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                target="_blank"
-                >Instagram</a
-            >
-        </p>
+    <p class="text-footer">&copy; 2025 La Chismossa. Todos los derechos reservados.</p>
+    <p class="text-footer">
+        Síguenos en <a href="https://www.instagram.com/la_chismossa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="img/logoInsta.png" alt="Logo de Instagram" class="logoInsta">Instagram</a>
+    </p>
     </footer>
 </body>
 </html>

@@ -1,40 +1,56 @@
-p, h4, h2 {
-    color: #ffffff;
-        text-align: center;
-            padding: 10px;
+.main-blog{
+    margin: 1.5em 0;
 }
-.categorias-blog{
-    background-color: #585858;
-    max-width: 1000px;
+.main-blog h4{
+    font-size: 2.2em;
+}
+.categorias-blog {
+    background-color: #0c1218;
+    max-width: 1200px;
     margin: auto;
-    padding: 20px;
-    list-style-type: none;
+    padding: 2rem;
+    border-radius: 12px;
 }
-.categorias h5{
-    border-bottom: #ffffff 3px solid;
+
+.categorias h5 {
+    color: #ffc107;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #00ffff;
+    padding-bottom: 0.5rem;
+}
+.categorias a{
+    text-decoration: none;
+    padding: 0.5em;
+    color: #000;
+    background-color: #00ffff;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.categorias a:hover {
+    background-color: #00adad;
 }
 .categorias-blog ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    background-color: #68482e;
-    padding: 20px;
+    gap: 2em;
+    margin: 25px 0;
     list-style-type: none;
-    
-}
-.categoria-blog-item{
-    background-color: #59682e;
-    padding: 20px;
 }
 .cuadros{
-    background-color: #2e683b;
-    max-width: 200px;
-    padding: 120px;
-    padding: auto;
+    background-color: #1e1e1e;
+    max-width: 30%;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.2);
 }
 
-
+.cuadros h6{
+    font-size: 1.5em;
+}
 .formulario-comentario {
     display: flex;
     flex-direction: column;
@@ -76,3 +92,15 @@ textarea{
     margin-bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+    .categorias-blog ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cuadros {
+        max-width: 90%;
+    }
+    .main-blog p{
+        margin: 0em 1em;
+    }
+}
