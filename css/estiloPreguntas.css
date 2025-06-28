@@ -62,3 +62,77 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.descripcion {
+    max-height: 0;
+    overflow: hidden;
+    color: #000000;
+    font-size: 1rem;
+    transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease, margin 0.5s ease;
+     text-align: left;
+}
+
+.descripcion .centrado {
+  display: block;
+  text-align: center;
+  font-weight: bold; 
+  margin-bottom: 1em;
+}
+
+.descripcion a {
+  color: #00ffff; 
+  text-decoration: none; 
+}
+
+/* Cuando está desplegado */
+.ver-check:checked + .labelVer + .descripcion {
+    max-height: 500px; 
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #fff; 
+    line-height: 1.5;
+}
+
+/* Estilo específico para párrafos con horarios dentro de .descripcion */
+.descripcion p, 
+.descripcion {
+    font-weight: 600;
+    font-style: normal;
+    color: #222222; 
+    margin-bottom: 0.5rem;
+}
+
+/* Puedes agregar un pequeño margen entre líneas <br> */
+.descripcion br {
+    line-height: 2;
+}
+
+@media screen and (max-width: 600px) {
+    .preguntas-lista {
+        max-width: 95%;
+        padding: 0 1rem;
+    }
+
+    .preguntas-lista li {
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .labelVer {
+        font-size: 1.1rem;
+    }
+
+    .labelVer img {
+        width: 20px;
+        height: 20px;
+        margin-left: 0.5rem;
+    }
+
+    .ver-check:checked + .labelVer + .descripcion {
+        max-height: 700px; /* Más alto para más contenido en móvil */
+        font-size: 0.95rem;
+    }
+}
