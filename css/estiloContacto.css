@@ -12,13 +12,30 @@
     border-radius: 15px;
     box-shadow: 0 0 12px rgba(0, 255, 255, 0.2);
 }
-.contactenos{
-    max-width: 300px;
-    max-height: 300px;
-    margin: auto;
-    padding: 2em;
+.contactenos {
+    max-width: 400px;
+    width: 100%;
+    padding: 1.5em;
+    margin: 1em auto;
+    overflow-wrap: break-word;
+    word-break: break-word;
     border-radius: 10px;
 }
+
+.contactenos p {
+    margin-bottom: 0.8em;
+    color: #ffffff;
+}
+
+.contactenos a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.contactenos a:hover {
+    text-decoration: underline;
+}
+
 .informacion{
     max-width: 600px;
     margin: auto;
@@ -122,3 +139,4 @@ button:hover {
     }
     
 }
+
