@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="css/estiloArticulo1.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <!-- Firebase compat scripts -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics-compat.js"></script>
+
+  <title>Sabor que enamora - Blog La Chismossa</title>
+</head>
+<body>
+  <header class="header">
+    <a class="logoJunto" href="index.html">
+      <img class="imagenLogo" src="./img/logo.png" alt="Logo" />
+      <span class="letraLogo">LA CHISMOSSA</span>
+    </a>
+
+    <input type="checkbox" id="menu-check" />
+    <label for="menu-check" class="labelMenu"><img src="img/menu.png" alt="Seleccionar menu"></label>
+
+    <nav class="menu">
+      <ul class="menu-lista">
+        <li><a class="menu-item" href="index.html">Inicio</a></li>
+        <li><a class="menu-item" href="productos.html">Productos</a></li>
+        <li><a class="menu-item" href="nosotros.html">Nosotros</a></li>
+        <li><a class="menu-item" href="blog.html">Blog</a></li>
+        <li><a class="menu-item" href="contacto.html">Contacto</a></li>
+        <li><a class="menu-item" href="preguntas.html">Preguntas Frecuentes</a></li>
+        <li><a class="menu-item" href="acercaDe.html">Acerca De</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- IMPORTANTE: atributo data-blog-id -->
+  <main data-blog-id="blog-nuestros-platillos">
+    <article>
+      <h2>Platillos Fascinantes</h2>
+      <img src="sopa.jpg" alt="Plato típico con sopa casera">
+      <p>
+        En La Chismossa nos enorgullece ofrecer platillos tradicionales que conquistan paladares...
+      </p>
+
+      <section class="comentarios-blog">
+        <h3>Comentarios</h3>
+        <ul id="lista-comentarios"></ul>
+
+        <form class="formulario-comentario">
+          <label for="nombre" class="labelComentario">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre aquí" required>
+
+          <label for="comentario" class="labelComentario">Comentario:</label>
+          <textarea id="comentario" name="comentario" placeholder="Escriba su comentario aquí" rows="4" required></textarea>
+
+          <button type="button" id="boton" onclick="guardarComentario()">Enviar</button>
+        </form>
+      </section>
+    </article>
+
+    <aside>
+      <h3>Etiquetas</h3>
+      <ul>
+        <li><a href="#">Comida típica</a></li>
+        <li><a href="#">Gastronomía local</a></li>
+        <li><a href="#">Turismo cultural</a></li>
+        <li><a href="#">Sopas</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p class="text-footer">&copy; 2025 La Chismossa. Todos los derechos reservados.</p>
+    <p class="text-footer">
+      Síguenos en <a href="https://www.instagram.com/la_chismossa" target="_blank"><img src="img/logoInsta.png" alt="Logo de Instagram" class="logoInsta">Instagram</a>
+    </p>
+  </footer>
+
+  <script src="js/articulo1.js"></script>
+</body>
+</html>
