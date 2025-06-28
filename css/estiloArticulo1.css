@@ -100,11 +100,19 @@ input, textarea {
 
 @media (max-width: 768px) {
   main {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
   }
 
   aside {
-    margin-top: 2rem;
+    order: 1;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  article {
+    order: 2;
   }
 }
+
