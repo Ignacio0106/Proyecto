@@ -76,7 +76,8 @@
     font-weight: bold;
 }
 input, select, textarea {
-    color: #000000; /* Texto negro */
+    margin-bottom: 1em;
+    color: #000000;
     background-color: #f0f0f0;
     border: none;
     padding: 0.7rem;
@@ -91,6 +92,7 @@ textarea::placeholder {
     color: #666;
 }
 button {
+    margin-top: 0.5em;
     background-color: #ffc107;
     color: #111;
     padding: 0.9rem 1.5rem;

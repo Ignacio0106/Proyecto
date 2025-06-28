@@ -59,6 +59,16 @@
                 <label class="labelFormulario" for="asunto">Asunto:</label>
                 <input class="labelFormulario" type="text" id="asunto" name="asunto" placeholder="Escriba su asunto aquí" required/>
 
+                <label class="labelFormulario" for="prioridad">Prioridad:</label>
+                <div>
+                    <input type="radio" id="prioridadAlta" name="prioridad" value="alta" />
+                    <label for="prioridadAlta">Alta</label>
+                    <input type="radio" id="prioridadMedia" name="prioridad" value="media" checked />
+                    <label for="prioridadMedia">Media</label>
+                    <input type="radio" id="prioridadBaja" name="prioridad" value="baja" />
+                    <label for="prioridadBaja">Baja</label>
+                </div>
+
                 <label class="labelFormulario" for="tipo">Tipo de consulta:</label>
                 <select class="labelFormulario" id="tipo" name="tipo">
                     <option value="general">General</option>
@@ -67,10 +77,20 @@
                     <option value="otro">Otro</option>
                 </select>
 
+                <label class="labelFormulario" for="fecha">Fecha preferida de contacto (opcional):</label>
+                <input class="labelFormulario" type="date" id="fecha" name="fecha" min="2025-06-28" />
+
+                <label class="labelFormulario" for="hora">Hora preferida de contacto (opcional):</label>
+                <input class="labelFormulario" type="time" id="hora" name="hora" />
+
                 <label class="labelFormulario" for="mensaje">Mensaje:</label>
                 <textarea class="labelFormulario" id="mensaje" name="mensaje" rows="4" placeholder="Escriba su mensaje aquí" required></textarea>
-
+                <div>
+                    <input type="checkbox" id="aceptoTerminos" name="aceptoTerminos" required />
+                    <label for="aceptoTerminos">Acepto los términos y condiciones</label>
+                </div>
                 <button type="submit">Enviar</button>
+                <button type="reset">Borrar Formulario</button>
             </form>
 
             <div
