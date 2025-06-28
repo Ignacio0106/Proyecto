@@ -104,3 +104,80 @@ textarea{
         margin: 0em 1em;
     }
 }
+
+
+@media screen and (max-width: 1024px) {
+    .cuadros {
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .categorias-blog ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cuadros {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .main-blog h4 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .main-blog p {
+        margin: 0 1em;
+        text-align: justify;
+    }
+
+    .comentarios-blog {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    .categorias h5 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .categorias a {
+        display: inline-block;
+        text-align: center;
+        padding: 0.6em 1em;
+    }
+
+    #boton {
+        width: 100%;
+    }
+
+    textarea {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-blog h4 {
+        font-size: 1.6em;
+    }
+
+    .cuadros h6 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .categorias a {
+        font-size: 0.95em;
+        padding: 0.5em 0.8em;
+    }
+
+    .comentarios-blog {
+        padding: 1rem;
+    }
+
+    #nombre, #comentario {
+        font-size: 1rem;
+    }
+}

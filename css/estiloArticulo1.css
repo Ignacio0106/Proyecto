@@ -97,3 +97,14 @@ input, textarea {
   margin-top: 1rem;
   color: #f0f0f0;
 }
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  aside {
+    margin-top: 2rem;
+  }
+}
