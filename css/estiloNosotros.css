@@ -1,59 +1,37 @@
 /* ==== Estilo general del contenedor principal ==== */
 main {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
     padding: 40px 20px;
-    max-width: 1000px;
     margin: 0 auto;
     background: #000;
-    border-radius: 16px;
-    box-shadow: #000;
     font-family: 'Bebas Neue', sans-serif;
     color: #e0e0e0;
     animation: fadeSlideUp 1s ease-in-out;
 }
-
-/* ==== Títulos generales (h1, h2, h3) ==== */
-h1, h2, h3 {
-    font-family: 'Bebas Neue', sans-serif;
-    color: #00ffff;
+/* Introduction Section */
+.intro-box {
+    background-color: #1a1a1a; /* Slightly lighter dark background */
+    padding: 2.5em;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); /* Cyan glow */
     text-align: center;
-    text-shadow: 0 0 5px rgba(0, 255, 255, 0.6);
 }
-
-h1 {
-    font-size: 36px;
-    margin-bottom: 30px;
+.intro-box p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #ffffff;
+    max-width: 800px;
+    margin: 0.5em auto 0;
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 2.2em;
     margin-top: 30px;
     margin-bottom: 15px;
 }
-
-h3 {
-    font-size: 24px;
-    margin-top: 40px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #00ffff;
-    padding-bottom: 5px;
-}
-
 /* ==== Secciones de contenido general ==== */
-.seccion {
-    margin-bottom: 50px;
-    text-align: center;
-    animation: fadeSlideUp 0.8s ease-in-out;
-}
-
-.seccion p,
-.seccion ul {
-    font-size: 18px;
-    line-height: 1.8;
-    max-width: 700px;
-    margin: 0 auto;
-    color: #f0f0f0;
-}
 
 /* ==== Estilo para listas ==== */
 ul {
@@ -86,20 +64,6 @@ cite {
     margin-top: 10px;
 }
 
-/* ==== Logo y nombre del sitio ==== */
-.logo {
-    width: 60px;
-    margin-right: 10px;
-}
-
-.nombre-sitio {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 32px;
-    color: #00ffff;
-    letter-spacing: 2px;
-    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
-}
-
 /* ==== Grupo de cajas (Historia, Misión, Visión, etc.) ==== */
 .grupo-cajas {
     display: flex;
@@ -116,7 +80,7 @@ cite {
     border-radius: 16px;
     padding: 20px;
     flex: 1 1 280px;
-    max-width: 320px;
+    max-width: 350px;
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -128,6 +92,7 @@ cite {
         0 0 25px #00ffff,
         0 0 45px rgba(0, 255, 255, 0.8);
 }
+
 
 /* ==== Animación de entrada (fade + desplazamiento) ==== */
 @keyframes fadeSlideUp {
@@ -209,6 +174,22 @@ cite {
     .nombre-sitio {
         font-size: 24px;
     }
+}
+.grupo-galeria{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.caja-galeria{
+    background-color: #000;
+    border: 2px solid #00ffff;
+    border-radius: 16px;
+    padding: 20px;
+    flex: 1 1 280px;
+    max-width: 620px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .galeria {
   display: flex;
