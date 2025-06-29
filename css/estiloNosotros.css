@@ -1,100 +1,322 @@
-/* ==== Estilo general del contenedor principal ==== */
-main {
-    display: flex;
-    flex-direction: column;
-    padding: 40px 20px;
-    margin: 0 auto;
-    background: #000;
-    font-family: 'Bebas Neue', sans-serif;
+/* estiloNosotros.css - Combined and Enhanced (Gallery/Multimedia Horizontal) */
+
+/* --- General Content Layout --- */
+.contenido-scroll {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 1em;
     color: #e0e0e0;
-    animation: fadeSlideUp 1s ease-in-out;
 }
-/* Introduction Section */
+
+/* --- General Titles (h1, h2, h3) - Overriding general styles for Nosotrosspecifc look --- */
+.contenido-scroll h1,
+.contenido-scroll h2,
+.contenido-scroll h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #00ffff;
+    text-align: center;
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
+}
+
+.contenido-scroll h1 {
+    font-size: 3.5em;
+    margin-bottom: 0.8em;
+    text-shadow: 0 0 12px rgba(0, 255, 255, 0.8);
+}
+
+.contenido-scroll h2 {
+    font-size: 2.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+.contenido-scroll h3 {
+    font-size: 1.8em;
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+    border-bottom: 2px solid #00ffff;
+    padding-bottom: 0.3em;
+    display: inline-block;
+}
+
+
+/* --- Section General Styling --- */
+.seccion {
+    margin-bottom: 3em;
+    text-align: center;
+    animation: fadeSlideUp 0.8s ease-in-out;
+}
+
+.seccion p,
+.seccion ul {
+    font-size: 1.1em;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0.5em auto;
+    color: #e0e0e0;
+}
+
+/* --- Intro Box --- */
 .intro-box {
-    background-color: #1a1a1a; /* Slightly lighter dark background */
+    background-color: #1a1a1a;
     padding: 2.5em;
     border-radius: 10px;
-    margin-bottom: 2em;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); /* Cyan glow */
+    margin-bottom: 3em;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
     text-align: center;
 }
+
+.intro-box h1 {
+    color: #FFC107;
+    margin-bottom: 0.5em;
+    font-size: 3.8em;
+    text-shadow: 0 0 15px rgba(255, 193, 7, 0.7);
+}
+
 .intro-box p {
     font-size: 1.2em;
     line-height: 1.6;
     color: #ffffff;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0.5em auto 0;
 }
 
-h2 {
-    font-size: 2.2em;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-/* ==== Secciones de contenido general ==== */
-
-/* ==== Estilo para listas ==== */
-ul {
-    padding-left: 20px;
-    text-align: left;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-/* ==== Bloques de testimonios ==== */
-blockquote {
-    font-style: italic;
-    background: radial-gradient(circle at 0% 50%, rgba(0, 144, 148, 1) 0%, rgba(0, 0, 0, 1) 100%);
-    border-left: 6px solid #00ffff;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 12px;
-    color: #fff;
-    max-width: 700px;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
-}
-
-cite {
-    display: block;
-    text-align: right;
-    font-size: 0.9em;
-    color: #ccc;
-    margin-top: 10px;
-}
-
-/* ==== Grupo de cajas (Historia, Misión, Visión, etc.) ==== */
+/* --- Group of Boxes (History, Mission, Vision, etc.) --- */
 .grupo-cajas {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.5em;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 3em;
     animation: fadeSlideUp 0.8s ease-in-out;
 }
 
 .caja {
-    background-color: #000;
+    background-color: #1a1a1a;
     border: 2px solid #00ffff;
-    border-radius: 16px;
-    padding: 20px;
-    flex: 1 1 280px;
-    max-width: 350px;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 2em;
+    flex: 1;
+    min-width: 280px;
+    max-width: 380px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .caja:hover {
-    transform: translateY(-5px);
-    box-shadow: 
-        0 0 25px #00ffff,
-        0 0 45px rgba(0, 255, 255, 0.8);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 255, 255, 0.6),
+                0 0 40px rgba(0, 255, 255, 0.4);
+}
+
+.caja .seccion-titulo {
+    color: #FFC107;
+    font-size: 2.2em;
+    margin-bottom: 0.8em;
+    text-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+}
+
+.caja .seccion-texto {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* --- Lists inside Boxes --- */
+.caja ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.caja ul li {
+    margin-bottom: 0.6em;
+    position: relative;
+    padding-left: 1.5em;
+    color: #c0f7ff;
+}
+
+.caja ul li::before {
+    content: '★';
+    color: #FFC107;
+    position: absolute;
+    left: 0;
+    font-size: 1.1em;
+    line-height: 1;
+}
+
+/* --- Gallery & Multimedia Section Container (`grupo-galeria`) --- */
+.grupo-galeria { /* This is the new container for gallery and multimedia */
+    display: flex;
+    flex-direction: row; /* Horizontal layout for the two main boxes */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center;
+    align-items: flex-start; /* Align boxes to the top */
+    gap: 2em; /* Space between gallery and multimedia box */
+    margin-bottom: 3em; /* Consistent spacing */
+    animation: fadeSlideUp 0.8s ease-in-out;
+}
+
+/* Individual Boxes within `grupo-galeria` (`caja-galeria`) */
+.caja-galeria {
+    background-color: #1a1a1a; /* Background for boxes */
+    border: 2px solid #00ffff; /* Cyan border */
+    border-radius: 12px; /* Rounded corners */
+    padding: 2em;
+    flex: 1 1 45%; /* Each box takes roughly half the width */
+    max-width: 550px; /* Cap their max width */
+    min-width: 320px; /* Ensure they don't get too small before wrapping */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); /* Cyan glow */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.caja-galeria:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 255, 255, 0.6),
+                0 0 40px rgba(0, 255, 255, 0.4);
+}
+
+/* Titles and text within `caja-galeria` (same as `.caja` for consistency) */
+.caja-galeria .seccion-titulo {
+    color: #FFC107;
+    font-size: 2.2em;
+    margin-bottom: 0.8em;
+    text-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+}
+
+.caja-galeria .seccion-texto {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #e0e0e0;
 }
 
 
-/* ==== Animación de entrada (fade + desplazamiento) ==== */
+/* --- Gallery Styles within `caja-galeria` --- */
+.galeria {
+    display: grid;
+    /* Define 2 columns for the inner grid */
+    grid-template-columns: 1fr 1fr;
+    /* Define 3 rows, the last one for the spanning image */
+    grid-template-rows: auto auto auto;
+    gap: 1em; /* Gap between images */
+    margin-top: 1.5em;
+    justify-items: center; /* Center images horizontally within their grid cells */
+    align-items: center; /* Center images vertically within their grid cells */
+}
+
+.galeria img {
+    width: 100%;
+    height: auto; /* Allow height to adjust based on aspect ratio */
+    object-fit: cover; /* Crop if necessary to fill the space */
+    border-radius: 8px;
+    padding: 5px; /* Creates the space for the glowing border */
+    background-color: transparent;
+    border: 2px solid #00FFFF;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7), 0 0 25px rgba(0, 255, 255, 0.5);
+    border-color: #FFC107;
+}
+
+/* Specific grid placement for each image to match the provided layout */
+.galeria img:nth-child(1) { /* Beer bottles */
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    max-height: 120px;
+}
+
+.galeria img:nth-child(2) { /* Ceviche/Soup */
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    max-height: 120px;
+}
+
+.galeria img:nth-child(3) { /* Sodas */
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    max-height: 120px;
+}
+
+.galeria img:nth-child(4) { /* Chifrijo */
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    max-height: 120px;
+}
+
+.galeria img:nth-child(5) { /* Flor de Caña */
+    grid-column: 1 / 3; /* Spans both columns */
+    grid-row: 3 / 4;
+    max-height: 180px;
+    width: 80%; /* Reduce width slightly to give it a centered look, as in the image */
+    margin: 0 auto; /* Center it horizontally within its grid area */
+}
+
+
+/* --- Multimedia Styles within `caja-galeria` --- */
+.caja-galeria video, .caja-galeria audio {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 18px #00ffff;
+}
+
+.caja-galeria video {
+    margin-bottom: 1em;
+}
+
+/* --- Testimonials Section --- */
+.testimonios {
+    background-color: #1a1a1a;
+    padding: 3em;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(255, 193, 7, 0.4);
+    margin-top: 3em;
+    text-align: center;
+}
+
+.testimonios .seccion-titulo {
+    color: #FFC107;
+    margin-bottom: 1.8em;
+    text-shadow: 0 0 15px rgba(255, 193, 7, 0.7);
+}
+
+.testimoniosss {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #fff;
+    background: radial-gradient(circle at 0% 50%, rgba(0, 144, 148, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%);
+    border-left: 6px solid #00ffff;
+    margin: 2em auto;
+    padding: 1.5em 2em;
+    border-radius: 12px;
+    max-width: 750px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.testimoniosss:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 0 20px rgba(0, 255, 255, 0.5),
+        0 0 35px #00ffff,
+        0 0 60px rgba(0, 255, 255, 0.9);
+}
+
+.testimoniosss cite {
+    display: block;
+    margin-top: 1em;
+    font-size: 0.95em;
+    color: #FFC107;
+    font-style: normal;
+    text-align: right;
+}
+
+/* --- Animation --- */
 @keyframes fadeSlideUp {
     from {
         opacity: 0;
@@ -106,126 +328,147 @@ cite {
     }
 }
 
-/* ==== Efectos hover en bloques de testimonios ==== */
-.testimoniosss {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 12px;
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+    .contenido-scroll {
+        max-width: 95%;
+    }
+    .intro-box h1 {
+        font-size: 3.2em;
+    }
+    /* General .caja elements can still be two columns on wider tablets */
+    .grupo-cajas .caja {
+        flex: 1 1 45%;
+        max-width: 450px; /* Slightly adjusted max-width for better two-column fit */
+    }
+
+    /* `grupo-galeria` should stack its `caja-galeria` children on smaller tablets */
+    .grupo-galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+    .caja-galeria {
+        flex: 1 1 100%; /* Take full width when stacked */
+        max-width: 550px; /* Retain max-width for content */
+    }
+
+    /* Gallery within `caja-galeria` will also stack its images */
+    .galeria {
+        grid-template-columns: 1fr; /* Single column */
+        grid-template-rows: auto;
+        gap: 1em;
+    }
+    .galeria img {
+        grid-column: auto !important; /* Override specific placement to allow stacking */
+        grid-row: auto !important;
+        max-height: 200px; /* Adjust height for single column */
+        width: 100%; /* Make them full width */
+        margin: 0; /* Reset specific margins */
+    }
+    .galeria img:nth-child(5) { /* Specific override for the 5th image */
+        width: 100%; /* Make it full width */
+        margin: 0; /* No auto margin when stacked */
+    }
 }
 
-.testimoniosss:hover {
-  transform: translateY(-5px);
-  box-shadow:
-    0 0 15px rgba(0, 255, 255, 0.4),
-    0 0 25px #00ffff,
-    0 0 45px rgba(0, 255, 255, 0.8);
-}
-
-/* ==== Responsividad para tablets y móviles ==== */
 @media (max-width: 768px) {
-    main {
-        padding: 30px 15px;
+    .contenido-scroll {
+        padding: 0 0.8em;
     }
 
-    h1 {
-        font-size: 30px;
+    .intro-box h1 {
+        font-size: 2.8em;
+    }
+    .intro-box p {
+        font-size: 1.1em;
     }
 
-    h2 {
-        font-size: 24px;
+    .contenido-scroll h1 {
+        font-size: 2.8em;
     }
-
-    h3 {
-        font-size: 20px;
+    .contenido-scroll h2 {
+        font-size: 2.2em;
+    }
+    .contenido-scroll h3 {
+        font-size: 1.6em;
     }
 
     .grupo-cajas {
-        gap: 16px;
+        flex-direction: column; /* All general boxes stack vertically */
+        align-items: center;
+        gap: 1.2em;
     }
 
     .caja {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 26px;
+        width: 90%;
+        min-width: unset;
+        max-width: 500px;
+        padding: 1.8em;
     }
 
-    h2 {
-        font-size: 22px;
-    }
-
-    h3 {
-        font-size: 18px;
+    .caja .seccion-titulo {
+        font-size: 2em;
     }
 
     .seccion p,
     .seccion ul {
-        font-size: 16px;
+        font-size: 1em;
         line-height: 1.6;
     }
 
-    .logo {
-        width: 50px;
+    /* `caja-galeria` also stacks */
+    .caja-galeria {
+        width: 90%;
+        min-width: unset;
+        max-width: 500px;
+        padding: 1.8em;
     }
 
-    .nombre-sitio {
-        font-size: 24px;
+    /* Gallery images remain stacked */
+    .galeria img {
+        max-height: 180px;
+    }
+
+    .testimonios {
+        padding: 2.5em;
+    }
+    .testimoniosss {
+        font-size: 1.1em;
+        padding: 1.2em 1.5em;
     }
 }
-.grupo-galeria{
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-}
-.caja-galeria{
-    background-color: #000;
-    border: 2px solid #00ffff;
-    border-radius: 16px;
-    padding: 20px;
-    flex: 1 1 280px;
-    max-width: 620px;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.galeria {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-  margin-top: 15px;
-}
 
-.galeria img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 16px;
-  border: 2px solid #00ffff;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
+@media (max-width: 480px) {
+    .intro-box h1 {
+        font-size: 2.2em;
+    }
+    .intro-box p {
+        font-size: 0.95em;
+    }
 
-.galeria img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px #00ffff;
-}
+    .contenido-scroll h1 {
+        font-size: 2.2em;
+    }
+    .contenido-scroll h2 {
+        font-size: 1.8em;
+    }
+    .contenido-scroll h3 {
+        font-size: 1.4em;
+    }
 
-/* Responsividad para pantallas pequeñas */
-@media (max-width: 700px) {
-  .galeria img {
-    width: 140px;
-    height: 140px;
-  }
-}
+    .caja, .caja-galeria {
+        padding: 1.5em;
+    }
 
-@media (max-width: 400px) {
-  .galeria img {
-    width: 100px;
-    height: 100px;
-  }
+    .galeria img {
+        max-height: 150px; /* Adjust height for very small screens */
+    }
+
+    .testimonios {
+        padding: 2em;
+    }
+    .testimoniosss {
+        font-size: 1em;
+        padding: 1em;
+    }
 }
