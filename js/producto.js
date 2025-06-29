@@ -4,22 +4,21 @@
 
         // Productos con categoría y subcategoría
         const productos = [
-            {categoria: 'bocas', subcategoria: 'clásicas', img: 'img/logo.png', alt: 'Palitos de queso', descripcion: 'Palitos de Queso', precio: '₡2,500'},
-            {categoria: 'bocas', subcategoria: 'clásicas', img: 'img/logo.png', alt: 'Papas Fritas', descripcion: 'Papas Fritas', precio: '₡2,500'},
-            {categoria: 'bocas', subcategoria: 'clásicas', img: 'img/logo.png', alt: 'Chicharrones', descripcion: 'Chicharrones', precio: '₡2,500'},
-            {categoria: 'bocas', subcategoria: 'clásicas', img: 'img/logo.png', alt: 'Alitas', descripcion: 'Alitas', precio: '₡2,500'},
+            {categoria: 'bocas', subcategoria: 'clásicas', img: 'img/palitosQueso.png', alt: 'Palitos de queso', descripcion: 'Palitos de Queso', precio: '₡2,500'},
+            {categoria: 'bocas', subcategoria: 'clásicas', img: 'img/papasFritas.png', alt: 'Papas Fritas', descripcion: 'Papas Fritas', precio: '₡2,500'},
+            {categoria: 'bocas', subcategoria: 'clásicas', img: 'img/chicharrones.png', alt: 'Chicharrones', descripcion: 'Chicharrones', precio: '₡2,500'},
+            {categoria: 'bocas', subcategoria: 'clásicas', img: 'img/alitas.png', alt: 'Alitas', descripcion: 'Alitas', precio: '₡2,500'},
             {categoria: 'bocas', subcategoria: 'clásicas', img: 'img/polloPapas.png', alt: 'Alitas con papas', descripcion: 'Alitas con papas', precio: '₡3,000'},
 
-            {categoria: 'bocas', subcategoria: 'típicas', img: 'img/logo.png', alt: 'Frijoles a las Trancas', descripcion: 'Frijoles a las Trancas', precio: '₡2,500'},
-            {categoria: 'bocas', subcategoria: 'típicas', img: 'img/logo.png', alt: 'Higado Encebollado', descripcion: 'Higado Encebollado', precio: '₡2,500'},
-            {categoria: 'bocas', subcategoria: 'típicas', img: 'img/logo.png', alt: 'Bistec Encebollado', descripcion: 'Bistec Encebollado', precio: '₡2,500'},
+            {categoria: 'bocas', subcategoria: 'típicas', img: 'img/frijolesTrancas.png', alt: 'Frijoles a las Trancas', descripcion: 'Frijoles a las Trancas', precio: '₡2,500'},
+            {categoria: 'bocas', subcategoria: 'típicas', img: 'img/higado.png', alt: 'Higado Encebollado', descripcion: 'Higado Encebollado', precio: '₡2,500'},
+            {categoria: 'bocas', subcategoria: 'típicas', img: 'img/bistec.png', alt: 'Bistec Encebollado', descripcion: 'Bistec Encebollado', precio: '₡2,500'},
             {categoria: 'bocas', subcategoria: 'típicas', img: 'img/ceviche.png', alt: 'Ceviche', descripcion: 'Ceviche', precio: '₡2,500'},
-            {categoria: 'bocas', subcategoria: 'típicas', img: 'img/chifrijo.png', alt: 'Chifrijo', descripcion: 'Chifrijo', precio: '₡3,500'},
             
 
 
             {categoria: 'bebidas', subcategoria: 'gaseosa', img: 'img/gaseosa.png', alt: 'Gaseosas', descripcion: 'Refresco Gaseoso', precio: '₡1,500'},
-            {categoria: 'bebidas', subcategoria: 'gaseosa', img: 'img/jugo.jpg', alt: 'Soda', descripcion: 'Soda', precio: '₡1,500'},
+            {categoria: 'bebidas', subcategoria: 'gaseosa', img: 'img/soda.png', alt: 'Soda', descripcion: 'Soda', precio: '₡1,500'},
 
             {categoria: 'bebidas', subcategoria: 'natural', img: 'img/teFrio.png', alt: 'Té Frio', descripcion: 'Té Frio', precio: '₡1,500'},
             
@@ -30,8 +29,8 @@
             {categoria: 'bebidas', subcategoria: 'bebidas Preparadas', img: 'img/sangria.png', alt: 'Sangria', descripcion: 'Sangria', precio: '₡2,000'},
             {categoria: 'bebidas', subcategoria: 'bebidas Preparadas', img: 'img/mamadita.png', alt: 'Mamaditas', descripcion: 'Mamaditas', precio: '₡1,500'}, 
 
-            {categoria: 'platosVariados', subcategoria: '', img: 'img/evento1.jpg', alt: 'Chifrijo', descripcion: 'Chifrijo', precio: '₡3,500'},
-            {categoria: 'platosVariados', subcategoria: '', img: 'img/evento1.jpg', alt: 'Salchipapas', descripcion: 'Salchipapas', precio: '₡3,000'},
+            {categoria: 'platosVariados', subcategoria: '', img: 'img/chifrijo.png', alt: 'Chifrijo', descripcion: 'Chifrijo', precio: '₡3,500'},
+            {categoria: 'platosVariados', subcategoria: '', img: 'img/salchipapa.png', alt: 'Salchipapas', descripcion: 'Salchipapas', precio: '₡3,000'},
 
             {categoria: 'tragos', subcategoria: '', img: 'img/jonnieBlack.png', alt: 'Johnnie Black', descripcion: 'Johnnie Black', precio: '₡3,500'},
             {categoria: 'tragos', subcategoria: '', img: 'img/florCaña18.png', alt: 'Flor de Caña 18', descripcion: 'Flor de Caña 18', precio: '₡3,500'},
