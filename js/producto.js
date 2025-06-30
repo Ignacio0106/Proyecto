@@ -37,6 +37,9 @@
             {categoria: 'tragos', subcategoria: '', img: 'img/jackDaniel.png', alt: 'Jack Daniels', descripcion: 'Jack Daniels', precio: '₡3,000'},
             {categoria: 'tragos', subcategoria: '', img: 'img/tequilaDonJulio.png', alt: 'Tequila Don Julio', descripcion: 'Tequila Don Julio', precio: '₡3,500'},
             {categoria: 'tragos', subcategoria: '', img: 'img/baileys.png', alt: 'Baileys', descripcion: 'Baileys', precio: '₡2,000'}, 
+
+            {categoria: 'eventos', subcategoria: '', img: 'img/karaoke.png', alt: 'eventoKaraoke', descripcion: 'Karaoke', precio: '₡0'}, 
+            {categoria: 'eventos', subcategoria: '', img: 'img/dj.png', alt: 'dj', descripcion: 'DJ', precio: '₡0'}, 
         ];
 
         const textosSubtitulo = {
