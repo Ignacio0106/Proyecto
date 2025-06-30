@@ -116,7 +116,7 @@ input, textarea {
   }
 }
 
-#lista-comentarios {
+.list-comentarios {
     background-color: #1e1e1e;
     border: 2px solid #00ffff;
     border-radius: 10px;
@@ -129,7 +129,7 @@ input, textarea {
     overflow-wrap: break-word;
 }
 
-#lista-comentarios li {
+.list-comentarios li {
     background-color: #2a2a2a;
     border-left: 4px solid #ffc107;
     padding: 0.8em;
@@ -137,4 +137,3 @@ input, textarea {
     border-radius: 8px;
     font-size: 0.95rem;
 }
-

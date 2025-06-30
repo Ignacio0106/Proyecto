@@ -39,44 +39,39 @@
 
   <!-- IMPORTANTE: atributo data-blog-id -->
   <main data-blog-id="blog-experiencias">
-    <article>
-      <h2>Una Noche Mágica en La Chismossa: El Testimonio de la Familia Solís</h2>
+      <article>
+      <h2>Testimonios: ¡Descubre Por Qué Nuestros Clientes Regresan Una y Otra Vez!</h2>
       <img src="img/familia-feliz.jpg" alt="Familia sonriendo en el restaurante La Chismossa">
       <p>
-En La Chismossa, la opinión de nuestros clientes es nuestro mayor tesoro. Queremos compartir contigo algunos de los testimonios que nos llegan a diario, reflejando el sabor, la calidez y el servicio que nos caracterizan. Estos relatos son el corazón de nuestra "chismossa" y la prueba de que el esfuerzo vale la pena.
-
-María P., San José: "El ceviche es simplemente espectacular, el mejor que he probado en años. Además, el ambiente es tan acogedor que me siento como en casa. ¡Un 10/10!"
-
-Roberto G., Heredia: "Vine con unos amigos de visita de Estados Unidos y quedaron fascinados con la comida típica costarricense. El servicio fue rápido y muy amable. ¡Gracias, La Chismossa, por representar tan bien a nuestra gastronomía!"
-
-Laura F., Alajuela: "Celebramos mi aniversario en La Chismossa y fue perfecto. Desde los cócteles hasta el postre, todo delicioso. Sin duda, un lugar al que volveremos muy pronto para crear más historias y momentos inolvidables."
-
-Cada comentario nos impulsa a seguir innovando y manteniendo la esencia de "Sabor que Enamora". ¡Gracias por ser parte de la familia La Chismossa!
+En La Chismossa, no solo creamos momentos inolvidables, sino que forjamos conexiones duraderas. La lealtad de nuestros clientes es el mayor testimonio de la pasión y el cariño que ponemos en cada detalle. ¿Quieres saber por qué nos eligen una y otra vez? Aquí te compartimos algunas de las razones que nos llenan de orgullo:
       </p>
 
-      <section class="comentarios-blog">
-        <h3>Comentarios</h3>
-        <ul id="lista-comentarios"></ul>
-
-        <form class="formulario-comentario">
-          <label for="nombre" class="labelComentario">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre aquí" required>
-
-          <label for="comentario" class="labelComentario">Comentario:</label>
-          <textarea id="comentario" name="comentario" placeholder="Escriba su comentario aquí" rows="4" required></textarea>
-
-          <button type="button" id="boton" onclick="guardarComentario()">Enviar</button>
-        </form>
-      </section>
-    </article>
+    <section class="comentarios-blog">
+      <h3>Comentarios</h3>
+        <ul class="list-comentarios">
+        <li><strong>Francisco</strong><br>
+        Muy buena la comida. Volvería sin dudarlo.
+        </li>
+      </ul>
+      <ul class="list-comentarios" id="lista-comentarios">
+      </ul>
+      <form class="formulario-comentario">
+        <label for="nombre" class="labelComentario">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="comentario" class="labelComentario">Comentario:</label>
+        <textarea id="comentario" name="comentario" rows="4" required></textarea>
+        <button type="button" id="boton" onclick="guardarComentario()">Enviar</button>
+      </form>
+    </section>
+  </article>
 
 <aside>
   <section class="relacionados">
     <h3>También te puede interesar</h3>
     <ul>
-      <li><a href="articulo1.html">Una noche mágica en La Chismossa</a></li>
-      <li><a href="articulo4.html">Promociones irresistibles</a></li>
-      <li><a href="articulo6.html">Bebidas recomendadas por nuestros clientes</a></li>
+      <li><a href="articulo1.html">Experiencias</a></li>
+      <li><a href="articulo3.html">Eventos</a></li>
+      <li><a href="articulo5.html">Comidas</a></li>
     </ul>
   </section>
 
@@ -87,7 +82,7 @@ Cada comentario nos impulsa a seguir innovando y manteniendo la esencia de "Sabo
       <cite>– La Chismossa</cite>
     </blockquote>
   </section>
-  
+
   <section class="mapa-blog">
     <h3>Explora otras categorías</h3>
     <ul>

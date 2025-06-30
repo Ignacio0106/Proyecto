@@ -39,44 +39,38 @@
 
   <!-- IMPORTANTE: atributo data-blog-id -->
   <main data-blog-id="blog-tragos">
-    <article>
-<h2>Del Campo a tu Copa: Cómo Seleccionamos a Nuestros Proveedores de Licores y Productos Frescos</h2>
-<img src="img/productos-locales.jpg" alt="Variedad de frutas frescas y licores artesanales">
-<p>
-En La Chismossa, creemos que la calidad de un trago no solo reside en la habilidad del bartender, sino en la pureza y procedencia de sus ingredientes. Nos enorgullece trabajar con proveedores locales y nacionales, asegurando que cada copa que servimos esté llena del auténtico "sabor que enamora" de Costa Rica.
-
-Licores Artesanales: Nuestro compromiso es con la autenticidad. Por eso, muchos de nuestros licores son de destilerías costarricenses que utilizan métodos tradicionales y materias primas de la región. Esto nos permite apoyar la economía local y ofrecer sabores únicos.
-
-Frutas Frescas de Temporada: ¿Esa guanábana en tu cóctel? Probablemente viene de una finca cercana. Trabajamos directamente con agricultores para obtener las frutas más frescas y maduras, garantizando el mejor sabor natural en cada jugo y puré que usamos en nuestra barra.
-
-Café de Origen: Nuestro café para cócteles como el Espresso Martini proviene de cooperativas cafetaleras de las zonas altas de Costa Rica, famosas por sus granos de alta calidad. El aroma y cuerpo de este café elevan nuestros tragos a otro nivel.
-
-Cada ingrediente es seleccionado con cuidado y pasión, porque para nosotros, un buen trago es una celebración de nuestra tierra y su gente. Ven y prueba la diferencia en La Chismossa.
-</p>
-
-      <section class="comentarios-blog">
-        <h3>Comentarios</h3>
-        <ul id="lista-comentarios"></ul>
-
-        <form class="formulario-comentario">
-          <label for="nombre" class="labelComentario">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre aquí" required>
-
-          <label for="comentario" class="labelComentario">Comentario:</label>
-          <textarea id="comentario" name="comentario" placeholder="Escriba su comentario aquí" rows="4" required></textarea>
-
-          <button type="button" id="boton" onclick="guardarComentario()">Enviar</button>
-        </form>
-      </section>
-    </article>
+  <article>
+    <h2>Tragos: Innovación en Cada Vaso en La Chismossa</h2>
+    <img src="img/productos-locales.jpg" alt="Variedad de frutas frescas y licores artesanales">
+    <p>
+    En La Chismossa, nuestros tragos son una celebración de la innovación en cada vaso, elevando la experiencia de cada sorbo. Nos enorgullece ofrecer una selección premium de licores que, tanto puros como en nuestras creativas mezclas, prometen deleitar incluso a los paladares más exigentes.
+    </p>
+    <section class="comentarios-blog">
+      <h3>Comentarios</h3>
+        <ul class="list-comentarios">
+        <li><strong>Francisco</strong><br>
+        Muy buena la comida. Volvería sin dudarlo.
+        </li>
+      </ul>
+      <ul class="list-comentarios" id="lista-comentarios">
+      </ul>
+      <form class="formulario-comentario">
+        <label for="nombre" class="labelComentario">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="comentario" class="labelComentario">Comentario:</label>
+        <textarea id="comentario" name="comentario" rows="4" required></textarea>
+        <button type="button" id="boton" onclick="guardarComentario()">Enviar</button>
+      </form>
+    </section>
+  </article>
 
 <aside>
   <section class="relacionados">
     <h3>También te puede interesar</h3>
     <ul>
-      <li><a href="articulo1.html">Una noche mágica en La Chismossa</a></li>
-      <li><a href="articulo4.html">Promociones irresistibles</a></li>
-      <li><a href="articulo6.html">Bebidas recomendadas por nuestros clientes</a></li>
+      <li><a href="articulo4.html">Promociones</a></li>
+      <li><a href="articulo5.html">Comidas</a></li>
+      <li><a href="articulo6.html">Eventos</a></li>
     </ul>
   </section>
 

@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #FFC107; /* Títulos en dorado */
     text-align: center;
     margin-bottom: 0.6em;
+    letter-spacing: 2px;
 }
 
 h1 { font-size: 3.8em; }

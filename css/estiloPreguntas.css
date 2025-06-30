@@ -109,7 +109,22 @@ body {
 .descripcion br {
     line-height: 2;
 }
-
+#tPregunta3{
+    color: #00ffff;
+}
+.pregunta3 li{
+    margin: 0;
+    margin-left: 1em;
+    border: none;
+    color: #fff;
+    padding: 0.5em;
+}
+.pregunta3 li:hover{
+    box-shadow: none;
+}
+h2{
+    margin-top: 0.6em;
+}
 @media screen and (max-width: 600px) {
     .preguntas-lista {
         max-width: 95%;

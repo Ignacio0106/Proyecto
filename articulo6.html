@@ -39,46 +39,39 @@
 
   <!-- IMPORTANTE: atributo data-blog-id -->
   <main data-blog-id="blog-bebidas">
-    <article>
-<h2>Más Allá del Trago: Nuestro Bartender Revela Trucos para Bebidas Refrescantes</h2>
-<img src="img/bartender-preparando.jpg" alt="Bartender preparando un cóctel en la barra del restaurante">
-<p>
-En La Chismossa, no solo la comida es protagonista; nuestras bebidas son una experiencia por sí mismas. Hoy, nuestro talentoso bartender, Daniel Soto, comparte algunos trucos y consejos para que prepares bebidas refrescantes en casa o aprecies aún más las creaciones de nuestra barra.
-
-Truco #1: La Importancia del Hielo: "Un buen cóctel necesita hielo de calidad. Usa cubos grandes que se derritan más lento para no aguar tu bebida. Y si puedes, enfría el vaso antes de servir."
-
-Truco #2: Jugos Frescos Siempre: "Olvídate de los concentrados. El sabor de un cóctel se eleva exponencialmente con jugos de frutas recién exprimidos. Aquí en La Chismossa, cada jugo es natural."
-
-Truco #3: El Balance es Clave: "Un buen cóctel es como una sinfonía. No solo se trata de alcohol; el dulzor, la acidez y la amargura deben estar en armonía. Prueba y ajusta hasta encontrar tu punto ideal."
-
-Truco #4: Guarniciones que Importan: "La presentación cuenta. Una rodaja de limón, una ramita de menta o unas bayas pueden transformar por completo la experiencia visual y aromática."
-
-Ven a La Chismossa y deja que Daniel te prepare la bebida perfecta, o inspírate con sus consejos para tus creaciones en casa. ¡Salud!
-</p>
-
-      <section class="comentarios-blog">
-        <h3>Comentarios</h3>
-        <ul id="lista-comentarios"></ul>
-
-        <form class="formulario-comentario">
-          <label for="nombre" class="labelComentario">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre aquí" required>
-
-          <label for="comentario" class="labelComentario">Comentario:</label>
-          <textarea id="comentario" name="comentario" placeholder="Escriba su comentario aquí" rows="4" required></textarea>
-
-          <button type="button" id="boton" onclick="guardarComentario()">Enviar</button>
-        </form>
-      </section>
-    </article>
+  <article>
+    <h2>Bebidas: Más Allá del Plato en La Chismossa</h2>
+    <img src="img/bartender-preparando.jpg" alt="Bartender preparando un cóctel en la barra del restaurante">
+    <p>
+    En La Chismossa, sabemos que una experiencia gastronómica completa va mucho más allá del plato principal. Por eso, nuestras bebidas son una experiencia por sí mismas, cuidadosamente seleccionadas para complementar y realzar cada bocado. Nuestra extensa oferta incluye una refrescante variedad de cervezas
+    Para quienes prefieren opciones sin alcohol, contamos con deliciosos refrescos, cremosos batidos de frutas naturales. Además, no pueden faltar las clásicas gaseosas y nuestras refrescantes aguas saborizadas, perfectas para acompañar cualquier platillo. En La Chismossa, cada sorbo es una invitación a explorar nuevos sabores y a hacer de tu visita una aventura inolvidable para todos tus sentidos.
+    </p>
+    <section class="comentarios-blog">
+      <h3>Comentarios</h3>
+        <ul class="list-comentarios">
+        <li><strong>Francisco</strong><br>
+        Muy buena la comida. Volvería sin dudarlo.
+        </li>
+      </ul>
+      <ul class="list-comentarios" id="lista-comentarios">
+      </ul>
+      <form class="formulario-comentario">
+        <label for="nombre" class="labelComentario">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="comentario" class="labelComentario">Comentario:</label>
+        <textarea id="comentario" name="comentario" rows="4" required></textarea>
+        <button type="button" id="boton" onclick="guardarComentario()">Enviar</button>
+      </form>
+    </section>
+  </article>
 
 <aside>
   <section class="relacionados">
     <h3>También te puede interesar</h3>
     <ul>
-      <li><a href="articulo1.html">Una noche mágica en La Chismossa</a></li>
-      <li><a href="articulo4.html">Promociones irresistibles</a></li>
-      <li><a href="articulo6.html">Bebidas recomendadas por nuestros clientes</a></li>
+      <li><a href="articulo4.html">Promociones</a></li>
+      <li><a href="articulo5.html">Comidas</a></li>
+      <li><a href="articulo7.html">Tragos</a></li>
     </ul>
   </section>
 

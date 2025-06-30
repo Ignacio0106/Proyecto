@@ -38,48 +38,44 @@
   </header>
 
   <!-- IMPORTANTE: atributo data-blog-id -->
-  <main data-blog-id="blog-experiencias">
-    <article>
-      <h2>Una Noche Mágica en La Chismossa: El Testimonio de la Familia Solís</h2>
-      <img src="img/familia-feliz.jpg" alt="Familia sonriendo en el restaurante La Chismossa">
-      <p>
-        "¡Desde que entramos, supimos que sería una noche diferente!", así comienza el emocionante relato de la familia Solís, quienes recientemente compartieron una velada inolvidable en nuestro restaurante La Chismossa. Queremos que conozcas de primera mano cómo creamos momentos especiales para nuestros clientes.
-
-Doña Ana Solís nos cuenta con entusiasmo: "Estábamos celebrando el cumpleaños de mi hijo menor y buscábamos un lugar con buena comida, pero sobre todo, un ambiente cálido y familiar. La Chismossa superó todas nuestras expectativas." La familia disfrutó de nuestra especialidad, el Casado Típico La Chismossa, y el pequeño de la casa se deleitó con nuestras papas fritas caseras. "La atención fue impecable, se sentía como si estuviéramos cenando en casa de un amigo", añadió Don Carlos, su esposo.
-
-En La Chismossa, no solo servimos comida; creamos experiencias. Cada sonrisa, cada celebración y cada momento compartido en nuestras mesas es el motor que nos impulsa a seguir ofreciendo lo mejor de Costa Rica. La familia Solís es un ejemplo de ello, y nos enorgullece ser parte de sus recuerdos más preciados
-      </p>
-
-      <section class="comentarios-blog">
-        <h3>Comentarios</h3>
-        <ul id="lista-comentarios"></ul>
-
-        <form class="formulario-comentario">
-          <label for="nombre" class="labelComentario">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre aquí" required>
-
-          <label for="comentario" class="labelComentario">Comentario:</label>
-          <textarea id="comentario" name="comentario" placeholder="Escriba su comentario aquí" rows="4" required></textarea>
-
-          <button type="button" id="boton" onclick="guardarComentario()">Enviar</button>
-        </form>
-      </section>
-    </article>
+<main data-blog-id="blog-experiencias">
+  <article>
+    <h2>Experiencias: ¡Voces que Confirman la Magia de La Chismossa!</h2>
+    <img src="" alt="">
+    <p>En La Chismossa, cada visita se convierte en una historia memorable, y no hay mejor manera de entender la magia de nuestro lugar que a través de las voces de quienes ya nos han visitado. Aquí te compartimos algunas experiencias reales que reflejan lo que significa disfrutar de La Chismossa:</p>
+    <section class="comentarios-blog">
+      <h3>Comentarios</h3>
+        <ul class="list-comentarios">
+        <li><strong>Francisco</strong><br>
+        Muy buena la comida. Volvería sin dudarlo.
+        </li>
+      </ul>
+      <ul class="list-comentarios" id="lista-comentarios">
+      </ul>
+      <form class="formulario-comentario">
+        <label for="nombre" class="labelComentario">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="comentario" class="labelComentario">Comentario:</label>
+        <textarea id="comentario" name="comentario" rows="4" required></textarea>
+        <button type="button" id="boton" onclick="guardarComentario()">Enviar</button>
+      </form>
+    </section>
+  </article>
 
 <aside>
   <section class="relacionados">
     <h3>También te puede interesar</h3>
     <ul>
-      <li><a href="articulo2.html">Testimonios de nuestros clientes</a></li>
-      <li><a href="articulo3.html">Eventos imperdibles en La Chismossa</a></li>
-      <li><a href="articulo5.html">Sabores que conquistan: lo mejor de nuestra cocina</a></li>
+      <li><a href="articulo2.html">Testimonios</a></li>
+      <li><a href="articulo3.html">Eventos</a></li>
+      <li><a href="articulo5.html">Comidas</a></li>
     </ul>
   </section>
 
   <section class="frase-blog">
     <h3>Frase para saborear</h3>
     <blockquote>
-      “Una buena comida no solo llena el estómago, sino también el alma.”<br>
+      “”<br>
       <cite>– La Chismossa</cite>
     </blockquote>
   </section>

@@ -39,47 +39,38 @@
 
   <!-- IMPORTANTE: atributo data-blog-id -->
   <main data-blog-id="blog-comidas">
-    <article>
-<h2>Entrevista Exclusiva: Los Secretos Culminarios de Nuestro Chef, Juan Carlos Fonseca</h2>
-<img src="img/chef-cocinando.jpg" alt="Chef Juan Carlos Fonseca preparando un platillo en la cocina">
-<p>
-En La Chismossa, cada plato es una obra de arte y cada sabor cuenta una historia. Hoy, nos adentramos en la mente creativa de nuestro Chef Ejecutivo, Juan Carlos Fonseca, quien nos abre las puertas de su cocina para compartir algunos de sus secretos y la filosofía detrás de su pasión por la gastronomía costarricense.
-
-Pregunta: Chef, ¿cuál es su ingrediente favorito para trabajar y por qué?
-Respuesta: "Definitivamente, el plátano maduro. Su versatilidad es increíble; puedo usarlo en platos dulces o salados, y siempre aporta ese toque hogareño y costarricense que busco."
-
-Pregunta: ¿Cómo logra ese equilibrio perfecto entre tradición e innovación en sus platos?
-Respuesta: "Es una danza. Respeto profundamente nuestras recetas ancestrales, pero siempre busco un giro, una nueva técnica o una combinación inesperada que eleve el plato sin perder su esencia. La inspiración la encuentro en los mercados locales y en las historias de nuestras abuelas."
-
-Pregunta: ¿Un consejo para los amantes de la cocina casera?
-Respuesta: "No le teman a experimentar y, sobre todo, usen ingredientes frescos y de calidad. El verdadero 'sabor que enamora' nace de la pasión y de la autenticidad de lo que pones en el plato. Y siempre, siempre prueben su comida mientras la cocinan."
-
-Gracias, Chef Juan Carlos, por compartir su sabiduría. ¡Te invitamos a La Chismossa para que pruebes estas delicias en persona!
-</p>
-
-      <section class="comentarios-blog">
-        <h3>Comentarios</h3>
-        <ul id="lista-comentarios"></ul>
-
-        <form class="formulario-comentario">
-          <label for="nombre" class="labelComentario">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre aquí" required>
-
-          <label for="comentario" class="labelComentario">Comentario:</label>
-          <textarea id="comentario" name="comentario" placeholder="Escriba su comentario aquí" rows="4" required></textarea>
-
-          <button type="button" id="boton" onclick="guardarComentario()">Enviar</button>
-        </form>
-      </section>
-    </article>
+  <article>
+    <h2>Adéntrate en el Sabor de La Chismossa</h2>
+    <img src="img/chef-cocinando.jpg" alt="Chef Juan Carlos Fonseca preparando un platillo en la cocina">
+    <p>
+    En La Chismossa, cada plato que servimos es mucho más que solo comida; es una verdadera obra de arte culinaria donde cada sabor cuenta una historia única. Nos dedicamos a ofrecer una amplia y variada selección de platos, cuidadosamente elegidos para que cada comensal pueda explorar un universo de sabores y texturas inigualables. Desde las recetas más tradicionales hasta innovadoras creaciones, nuestra cocina te invita a un viaje sensorial que deleitará tu paladar y despertará tus sentidos. Ven y descubre por ti mismo por qué en La Chismossa, cada visita se convierte en una experiencia gastronómica memorable.
+    </p>
+    <section class="comentarios-blog">
+      <h3>Comentarios</h3>
+        <ul class="list-comentarios">
+        <li><strong>Francisco</strong><br>
+        Muy buena la comida. Volvería sin dudarlo.
+        </li>
+      </ul>
+      <ul class="list-comentarios" id="lista-comentarios">
+      </ul>
+      <form class="formulario-comentario">
+        <label for="nombre" class="labelComentario">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="comentario" class="labelComentario">Comentario:</label>
+        <textarea id="comentario" name="comentario" rows="4" required></textarea>
+        <button type="button" id="boton" onclick="guardarComentario()">Enviar</button>
+      </form>
+    </section>
+  </article>
 
 <aside>
   <section class="relacionados">
     <h3>También te puede interesar</h3>
     <ul>
-      <li><a href="articulo1.html">Una noche mágica en La Chismossa</a></li>
-      <li><a href="articulo4.html">Promociones irresistibles</a></li>
-      <li><a href="articulo6.html">Bebidas recomendadas por nuestros clientes</a></li>
+      <li><a href="articulo4.html">Articulo4</a></li>
+      <li><a href="articulo6.html"></a>Articulo6</li>
+      <li><a href="articulo7.html"></a>Articulo7</li>
     </ul>
   </section>
 
