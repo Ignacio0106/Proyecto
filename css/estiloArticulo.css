@@ -133,7 +133,12 @@ input, textarea {
   align-items: center;
 
 }
-
+.listaPromociones{
+  margin-left: 1em;
+}
+.listaPromociones li{
+  margin-bottom: 1em;
+}
 @media (max-width: 768px) {
   main {
     display: flex;
