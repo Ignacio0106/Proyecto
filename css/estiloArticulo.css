@@ -153,4 +153,7 @@ input, textarea {
   .imagenesBlog{
     flex-direction: column;
   }
+  .imagenesBlog img{
+      margin-top: 1em;
+  }
 }
