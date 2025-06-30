@@ -97,25 +97,6 @@ input, textarea {
   margin-top: 1rem;
   color: #f0f0f0;
 }
-
-@media (max-width: 768px) {
-  main {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  aside {
-    order: 1;
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-  }
-
-  article {
-    order: 2;
-  }
-}
-
 .list-comentarios {
     background-color: #1e1e1e;
     border: 2px solid #00ffff;
@@ -151,4 +132,25 @@ input, textarea {
   flex-direction: row;
   align-items: center;
 
+}
+
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  aside {
+    order: 1;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  article {
+    order: 2;
+  }
+  .imagenesBlog{
+    flex-direction: column;
+  }
 }
