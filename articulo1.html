@@ -13,6 +13,7 @@
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics-compat.js"></script>
 
   <title>Sabor que enamora - Blog La Chismossa</title>
+
 </head>
 <body>
   <header class="header">
@@ -37,56 +38,87 @@
     </nav>
   </header>
 
-  <!-- IMPORTANTE: atributo data-blog-id -->
-<main data-blog-id="blog-experiencias">
-  <article>
-    <h2>Experiencias: ¡Voces que Confirman la Magia de La Chismossa!</h2>
-   <div class="imagenesBlog">
-  <p>En <strong>La Chismossa</strong>, <em>cada visita</em> se convierte en 
-  <u>una historia memorable</u>, y no hay mejor manera de entender 
-  <strong><em>la magia de nuestro lugar</em></strong> que a través de las 
-  <u><em>voces de quienes ya nos han visitado</em></u>. Aquí te compartimos algunas 
-  <strong>experiencias reales</strong> que reflejan lo que significa 
-  <em>disfrutar de <u>La Chismossa</u></em></p><img src="img/Eventos.jpg" alt="Ganadora de una dinámica">
-</div>
-    <section class="comentarios-blog">
-      <h3>Comentarios</h3>
+  <main data-blog-id="blog-experiencias">
+    <article>
+      <h2>Experiencias: ¡Voces que Confirman la Magia de La Chismossa!</h2>
+      <p class="imagenesBlog">
+        En La Chismossa, cada visita se convierte en una historia memorable, y no hay mejor manera de entender la magia de nuestro lugar que a través de las voces de quienes ya nos han visitado. Aquí te compartimos algunas experiencias reales que reflejan lo que significa disfrutar de La Chismossa:
+        <img src="img/Eventos.jpg" alt="Ganadora de una dinámica">
+      </p>
+
+      <!-- Tabla insertada aquí -->
+<section class="tabla-blog">
+  <h3>Próximos Eventos en La Chismossa</h3>
+  <div style="overflow-x: auto;">
+    <table>
+      <thead>
+        <tr>
+          <th>Evento</th>
+          <th>Fecha</th>
+          <th>Descripción</th>
+          <th>Actividades Destacadas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Noche de Despecho</td>
+          <td>04/07/2025</td>
+          <td>Canta a todo pulmón tus temas favoritos.</td>
+          <td>Karaoke, Canto libre</td>
+        </tr>
+        <tr>
+          <td>Clásico de Fútbol</td>
+          <td>05/07/2025</td>
+          <td>Vive la emoción del partido en pantalla gigante.</td>
+          <td>Transmisión en vivo, Ambiente de barra</td>
+        </tr>
+        <tr>
+          <td>Noche de DJ YOHAN</td>
+          <td>06/07/2025</td>
+          <td>Baila con la mejor música del momento.</td>
+          <td>Música en vivo, Pista de baile</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+      <!-- Comentarios -->
+      <section class="comentarios-blog">
+        <h3>Comentarios</h3>
         <ul class="list-comentarios">
-        <li><strong>Sara</strong><br>
-        El ambiente es agradable y me la pase bien
-        </li>
-      </ul>
-      <ul class="list-comentarios" id="lista-comentarios">
-      </ul>
-      <form class="formulario-comentario">
-        <label for="nombre" class="labelComentario">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <label for="comentario" class="labelComentario">Comentario:</label>
-        <textarea id="comentario" name="comentario" rows="4" required></textarea>
-        <button type="button" id="boton" onclick="guardarComentario()">Enviar</button>
-      </form>
-    </section>
-  </article>
+          <li><strong>Sara</strong><br>El ambiente es agradable y me la pasé bien</li>
+        </ul>
+        <ul class="list-comentarios" id="lista-comentarios"></ul>
+        <form class="formulario-comentario">
+          <label for="nombre" class="labelComentario">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          <label for="comentario" class="labelComentario">Comentario:</label>
+          <textarea id="comentario" name="comentario" rows="4" required></textarea>
+          <button type="button" id="boton" onclick="guardarComentario()">Enviar</button>
+        </form>
+      </section>
+    </article>
 
-<aside>
-  <section class="relacionados">
-    <h3>También te puede interesar</h3>
-    <ul>
-      <li><a href="articulo2.html">Testimonios</a></li>
-      <li><a href="articulo3.html">Eventos</a></li>
-      <li><a href="articulo5.html">Comidas</a></li>
-    </ul>
-  </section>
-  <section class="mapa-blog">
-    <h3>Explora otras categorías</h3>
-    <ul>
-      <li><a href="blog.html#Reseñas y Experiencias">Reseñas y Experiencias</a></li>
-      <li><a href="blog.html#Eventos y novedades">Eventos y novedades</a></li>
-      <li><a href="blog.html#Nuestra Cocina y Barra">Nuestra Cocina y Barra</a></li>
-    </ul>
-  </section>
-</aside>
-
+    <aside>
+      <section class="relacionados">
+        <h3>También te puede interesar</h3>
+        <ul>
+          <li><a href="articulo2.html">Testimonios</a></li>
+          <li><a href="articulo3.html">Eventos</a></li>
+          <li><a href="articulo5.html">Comidas</a></li>
+        </ul>
+      </section>
+      <section class="mapa-blog">
+        <h3>Explora otras categorías</h3>
+        <ul>
+          <li><a href="blog.html#Reseñas y Experiencias">Reseñas y Experiencias</a></li>
+          <li><a href="blog.html#Eventos y novedades">Eventos y novedades</a></li>
+          <li><a href="blog.html#Nuestra Cocina y Barra">Nuestra Cocina y Barra</a></li>
+        </ul>
+      </section>
+    </aside>
   </main>
 
   <footer>
