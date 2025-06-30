@@ -137,3 +137,18 @@ input, textarea {
     border-radius: 8px;
     font-size: 0.95rem;
 }
+.imagenesBlog{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.imagenesBlog img{
+      width: 300px;
+    margin-left: 1em;
+}
+.imagen{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
