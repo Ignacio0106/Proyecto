@@ -86,7 +86,6 @@ body {
 
 /* Cuando está desplegado */
 .ver-check:checked + .labelVer + .descripcion {
-    max-height: 500px; 
     margin-top: 1rem;
     padding: 1rem;
     background-color: #1e1e1e;
