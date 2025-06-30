@@ -208,6 +208,7 @@
 
 .galeria img {
     width: 100%;
+    min-height: 100%;
     height: auto; /* Allow height to adjust based on aspect ratio */
     object-fit: cover; /* Crop if necessary to fill the space */
     border-radius: 8px;
@@ -225,38 +226,30 @@
 }
 
 /* Specific grid placement for each image to match the provided layout */
-.galeria img:nth-child(1) { /* Beer bottles */
+.galeria img:nth-child(1) { /* Chifrijo */
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    max-height: 120px;
 }
 
 .galeria img:nth-child(2) { /* Ceviche/Soup */
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    max-height: 120px;
 }
 
 .galeria img:nth-child(3) { /* Sodas */
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    max-height: 120px;
 }
 
-.galeria img:nth-child(4) { /* Chifrijo */
+.galeria img:nth-child(4) { /* Flor de Caña */
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    max-height: 120px;
 }
 
-.galeria img:nth-child(5) { /* Flor de Caña */
+.galeria img:nth-child(5) { /* Beer bottles */
     grid-column: 1 / 3; /* Spans both columns */
     grid-row: 3 / 4;
-    max-height: 180px;
-    width: 80%; /* Reduce width slightly to give it a centered look, as in the image */
-    margin: 0 auto; /* Center it horizontally within its grid area */
 }
-
 
 /* --- Multimedia Styles within `caja-galeria` --- */
 .caja-galeria video, .caja-galeria audio {
@@ -418,15 +411,10 @@
 
     /* `caja-galeria` also stacks */
     .caja-galeria {
-        width: 90%;
+        width: 80%;
         min-width: unset;
         max-width: 500px;
         padding: 1.8em;
-    }
-
-    /* Gallery images remain stacked */
-    .galeria img {
-        max-height: 180px;
     }
 
     .testimonios {
