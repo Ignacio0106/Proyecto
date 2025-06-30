@@ -55,7 +55,7 @@ body {
     filter: drop-shadow(0 0 6px #00ffff);
 }
 .ver-check:checked + .labelVer + .descripcion{
-    max-height: 500px; /* Ajusta según el contenido */
+    max-height: 500px; 
     margin-top: 1rem;
     padding: 1rem;
     background-color: #dadada;

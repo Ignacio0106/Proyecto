@@ -1,6 +1,4 @@
-/* estiloNosotros.css - Combined and Enhanced (Gallery/Multimedia Horizontal) */
 
-/* --- General Content Layout --- */
 .contenido-scroll {
     max-width: 1200px;
     margin: 2em auto;
@@ -8,11 +6,9 @@
     color: #e0e0e0;
 }
 
-/* --- General Titles (h1, h2, h3) - Overriding general styles for Nosotrosspecifc look --- */
 .contenido-scroll h1,
 .contenido-scroll h2,
 .contenido-scroll h3 {
-    font-family: 'Bebas Neue', sans-serif;
     color: #00ffff;
     text-align: center;
     text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
@@ -146,28 +142,26 @@
     line-height: 1;
 }
 
-/* --- Gallery & Multimedia Section Container (`grupo-galeria`) --- */
-.grupo-galeria { /* This is the new container for gallery and multimedia */
+.grupo-galeria {
     display: flex;
-    flex-direction: row; /* Horizontal layout for the two main boxes */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-direction: row; 
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start; /* Align boxes to the top */
-    gap: 2em; /* Space between gallery and multimedia box */
-    margin-bottom: 3em; /* Consistent spacing */
+    align-items: flex-start; 
+    gap: 2em; 
+    margin-bottom: 3em;
     animation: fadeSlideUp 0.8s ease-in-out;
 }
 
-/* Individual Boxes within `grupo-galeria` (`caja-galeria`) */
 .caja-galeria {
-    background-color: #1a1a1a; /* Background for boxes */
-    border: 2px solid #00ffff; /* Cyan border */
-    border-radius: 12px; /* Rounded corners */
+    background-color: #1a1a1a;
+    border: 2px solid #00ffff;
+    border-radius: 12px;
     padding: 2em;
-    flex: 1 1 45%; /* Each box takes roughly half the width */
-    max-width: 550px; /* Cap their max width */
-    min-width: 320px; /* Ensure they don't get too small before wrapping */
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); /* Cyan glow */
+    flex: 1 1 45%; 
+    max-width: 550px;
+    min-width: 320px; 
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); 
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -178,7 +172,6 @@
                 0 0 40px rgba(0, 255, 255, 0.4);
 }
 
-/* Titles and text within `caja-galeria` (same as `.caja` for consistency) */
 .caja-galeria .seccion-titulo {
     color: #FFC107;
     font-size: 2.2em;
@@ -193,26 +186,23 @@
 }
 
 
-/* --- Gallery Styles within `caja-galeria` --- */
 .galeria {
     display: grid;
-    /* Define 2 columns for the inner grid */
     grid-template-columns: 1fr 1fr;
-    /* Define 3 rows, the last one for the spanning image */
     grid-template-rows: auto auto auto;
-    gap: 1em; /* Gap between images */
+    gap: 1em; 
     margin-top: 1.5em;
-    justify-items: center; /* Center images horizontally within their grid cells */
-    align-items: center; /* Center images vertically within their grid cells */
+    justify-items: center;
+    align-items: center; 
 }
 
 .galeria img {
     width: 100%;
     min-height: 100%;
-    height: auto; /* Allow height to adjust based on aspect ratio */
-    object-fit: cover; /* Crop if necessary to fill the space */
+    height: auto; 
+    object-fit: cover; 
     border-radius: 8px;
-    padding: 5px; /* Creates the space for the glowing border */
+    padding: 5px;
     background-color: transparent;
     border: 2px solid #00FFFF;
     box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
@@ -225,33 +215,31 @@
     border-color: #FFC107;
 }
 
-/* Specific grid placement for each image to match the provided layout */
-.galeria img:nth-child(1) { /* Chifrijo */
+.galeria img:nth-child(1) { 
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
 
-.galeria img:nth-child(2) { /* Ceviche/Soup */
+.galeria img:nth-child(2) {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
 
-.galeria img:nth-child(3) { /* Sodas */
+.galeria img:nth-child(3) { 
     grid-column: 1 / 2;
     grid-row: 2 / 3;
 }
 
-.galeria img:nth-child(4) { /* Flor de Caña */
+.galeria img:nth-child(4) { 
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
 
-.galeria img:nth-child(5) { /* Beer bottles */
-    grid-column: 1 / 3; /* Spans both columns */
+.galeria img:nth-child(5) {
+    grid-column: 1 / 3; 
     grid-row: 3 / 4;
 }
 
-/* --- Multimedia Styles within `caja-galeria` --- */
 .caja-galeria video, .caja-galeria audio {
     width: 100%;
     border-radius: 12px;
@@ -262,7 +250,6 @@
     margin-bottom: 1em;
 }
 
-/* --- Testimonials Section --- */
 .testimonios {
     background-color: #1a1a1a;
     padding: 3em;
@@ -329,38 +316,34 @@
     .intro-box h1 {
         font-size: 3.2em;
     }
-    /* General .caja elements can still be two columns on wider tablets */
     .grupo-cajas .caja {
         flex: 1 1 45%;
-        max-width: 450px; /* Slightly adjusted max-width for better two-column fit */
     }
 
-    /* `grupo-galeria` should stack its `caja-galeria` children on smaller tablets */
     .grupo-galeria {
         flex-direction: column;
         align-items: center;
     }
     .caja-galeria {
-        flex: 1 1 100%; /* Take full width when stacked */
-        max-width: 550px; /* Retain max-width for content */
+        flex: 1 1 100%; 
+        max-width: 550px; 
     }
 
-    /* Gallery within `caja-galeria` will also stack its images */
     .galeria {
-        grid-template-columns: 1fr; /* Single column */
+        grid-template-columns: 1fr; 
         grid-template-rows: auto;
         gap: 1em;
     }
     .galeria img {
-        grid-column: auto !important; /* Override specific placement to allow stacking */
+        grid-column: auto !important; 
         grid-row: auto !important;
-        max-height: 200px; /* Adjust height for single column */
-        width: 100%; /* Make them full width */
-        margin: 0; /* Reset specific margins */
+        max-height: 200px;
+        width: 100%;
+        margin: 0; 
     }
-    .galeria img:nth-child(5) { /* Specific override for the 5th image */
-        width: 100%; /* Make it full width */
-        margin: 0; /* No auto margin when stacked */
+    .galeria img:nth-child(5) { 
+        width: 100%; 
+        margin: 0;
     }
 }
 
@@ -387,7 +370,7 @@
     }
 
     .grupo-cajas {
-        flex-direction: column; /* All general boxes stack vertically */
+        flex-direction: column;
         align-items: center;
         gap: 1.2em;
     }
@@ -409,7 +392,6 @@
         line-height: 1.6;
     }
 
-    /* `caja-galeria` also stacks */
     .caja-galeria {
         width: 80%;
         min-width: unset;

@@ -1,15 +1,11 @@
-/* ----------------------------- */
-/* Tipografía y Títulos         */
-/* ----------------------------- */
 
-/* Títulos principales con fuente Bebas Neue y color principal */
 h1, h2 {
   font-family: 'Bebas Neue', sans-serif;
   color: #2e5f68;
   margin-bottom: 10px;
 }
 
-/* Títulos para categorías y subcategorías */
+
 h3 {
   font-family: 'Bebas Neue', sans-serif;
   color: #1f4a5a;
@@ -19,7 +15,6 @@ h3 {
   padding-bottom: 5px;
 }
 
-/* Subtítulos secundarios */
 h4 {
   font-family: Arial, sans-serif;
   color: #4a7c8c;
@@ -28,7 +23,6 @@ h4 {
   font-style: italic;
 }
 
-/* Subtítulo personalizado */
 #subtitulo {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 28px;
@@ -38,9 +32,6 @@ h4 {
   text-align: left;
 }
 
-/* ----------------------------- */
-/* Área principal de contenido  */
-/* ----------------------------- */
 
 main {
   max-width: 1200px;
@@ -50,7 +41,6 @@ main {
   font-family: Arial, sans-serif;
 }
 
-/* Etiquetas dentro de main */
 main label {
   font-weight: bold;
   display: block;
@@ -61,7 +51,6 @@ main label {
   text-align: left;
 }
 
-/* Selectores dentro de main */
 main select {
   padding: 8px 12px;
   border-radius: 8px;
@@ -75,9 +64,6 @@ main select {
   text-align: left;
 }
 
-/* ----------------------------- */
-/* Filtros por categoría        */
-/* ----------------------------- */
 
 .filtro-categoria {
   text-align: center;
@@ -95,9 +81,6 @@ main select {
   font-family: Arial, sans-serif;
 }
 
-/* ----------------------------- */
-/* Contenedor de productos      */
-/* ----------------------------- */
 
 .productos-container {
   display: flex;
@@ -108,7 +91,6 @@ main select {
   padding: 0 10px;
 }
 
-/* Estilos de cada producto */
 .producto {
   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(13, 252, 244, 1) 100%);
   border: 1px solid #ccc;
@@ -124,7 +106,6 @@ main select {
   transition: box-shadow 0.3s ease;
 }
 
-/* Hover en producto */
 .producto:hover {
   transform: translateY(-5px);
   box-shadow: 
@@ -133,7 +114,6 @@ main select {
     0 0 45px rgba(0, 255, 255, 0.8);
 }
 
-/* Título dentro del producto */
 .producto h3 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 20px;
@@ -141,13 +121,12 @@ main select {
   color: #00ffff;
 }
 
-/* Descripción corta del producto */
+
 .producto p {
   font-size: 14px;
   color: #e0e0e0;
 }
 
-/* Imagen del producto */
 .producto img {
   width: 85%;
   max-height: 150px;
@@ -156,7 +135,6 @@ main select {
   margin-top: 10px;
 }
 
-/* Descripción larga del producto */
 .producto .descripcion {
   font-family: Georgia, serif;
   font-weight: bold;
@@ -166,7 +144,6 @@ main select {
   min-height: 50px;
 }
 
-/* Precio del producto */
 .producto .precio {
   font-family: Georgia, serif;
   font-weight: bold;
@@ -174,11 +151,6 @@ main select {
   padding-bottom: 10px;
 }
 
-/* ----------------------------- */
-/* Animaciones                  */
-/* ----------------------------- */
-
-/* Definición de la animación */
 @keyframes fadeSlideUp {
   from {
     opacity: 0;
@@ -190,7 +162,6 @@ main select {
   }
 }
 
-/* Aplicación de animación a elementos clave */
 main > *,
 h1, h2, h3, h4,
 #subtitulo,
@@ -207,27 +178,22 @@ h1, h2, h3, h4,
 /* ----------------------------- */
 
 @media (max-width: 768px) {
-  /* Títulos centrados en móviles */
   h1, h2, h3, h4,
   #subtitulo {
     text-align: center;
     margin-left: 0;
   }
-
-  /* Ajuste en main */
   main label,
   main select {
     margin-left: 0;
     text-align: center;
   }
 
-  /* Contenedor de productos en columna */
   .productos-container {
     flex-direction: column;
     align-items: center;
   }
 
-  /* Cada producto ocupa casi toda la pantalla */
   .producto {
     width: 90%;
   }
