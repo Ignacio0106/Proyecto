@@ -47,7 +47,8 @@
             bebidas: 'Bebidas',
             bocas: 'Bocas',
             platosVariados: 'Platos Variados',
-            tragos: 'Tragos'
+            tragos: 'Tragos',
+            eventos : 'eventos'
         };
 
         function crearProductoHTML(producto) {
